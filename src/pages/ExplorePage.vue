@@ -27,9 +27,7 @@
             </div>
             <ChevronDown :size="14" class="text-slate-400 shrink-0" />
           </button>
-          <h1 class="text-lg font-bold text-slate-900 lg:hidden shrink-0">
-            Sport<span class="text-blue-600">UZ</span>
-          </h1>
+          <img src="../../public/spotr.png" class="w-24 h-8 object-cover" />
         </div>
 
         <!-- Search row with filter button -->

@@ -36,9 +36,7 @@
     <div class="max-w-7xl mx-auto px-8 flex items-center justify-between h-16">
       <!-- Logo -->
       <router-link to="/" class="flex items-center gap-2">
-        <h1 class="text-lg font-extrabold text-slate-900">
-          Sport & Fitness <span class="text-blue-600">UZ</span>
-        </h1>
+        <img src="../../public/spotr.png" class="w-30" />
       </router-link>
 
       <!-- Nav links -->
