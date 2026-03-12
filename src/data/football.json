@@ -1,0 +1,273 @@
+[
+  {
+    "id": "fb-001",
+    "name": "Goal Arena Tashkent",
+    "type": "football",
+    "description": "Professional-grade football pitches with floodlights, synthetic turf, and booking system.",
+    "address": "Bunyodkor str. 1",
+    "city": "Tashkent",
+    "lat": 41.3055,
+    "lng": 69.218,
+    "rating": 4.7,
+    "reviewCount": 456,
+    "priceRange": "$$",
+    "monthlyPrice": 300000,
+    "openingHours": "06:00–00:00",
+    "phone": "+998 71 230 1234",
+    "services": ["Pitch Rental", "Coaching", "Tournaments", "Team Training"],
+    "amenities": [
+      "Floodlights",
+      "Changing Rooms",
+      "Showers",
+      "Parking",
+      "Cafe"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1529900748604-07564a03e7a6?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1529900748604-07564a03e7a6?w=800",
+      "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=800"
+    ],
+    "isNew": true,
+    "isVerified": true,
+    "isFeatured": true,
+    "area": 3000,
+    "trainerCount": 6,
+    "established": 2016,
+    "tags": ["Futbol", "Jamoa", "Maydon"],
+    "maxCapacity": 100,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@goalarenatashkent",
+      "telegram": "@fb-001"
+    },
+    "weekdayHours": "06:00–00:00",
+    "weekendHours": "06:00–00:00",
+    "features": ["Pitch Rental", "Coaching", "Floodlights", "Changing Rooms"]
+  },
+  {
+    "id": "fb-002",
+    "name": "Champions Field",
+    "type": "football",
+    "description": "Five-a-side and full-size pitches with real grass, tournament hosting, and youth academy.",
+    "address": "Temuriy str. 45",
+    "city": "Tashkent",
+    "lat": 41.319,
+    "lng": 69.305,
+    "rating": 4.5,
+    "reviewCount": 312,
+    "priceRange": "$$",
+    "monthlyPrice": 280000,
+    "openingHours": "07:00–23:00",
+    "phone": "+998 71 237 5678",
+    "services": ["Pitch Rental", "Youth Academy", "Tournament Hosting"],
+    "amenities": [
+      "Natural Grass",
+      "Changing Rooms",
+      "Showers",
+      "Vending Machines"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=800",
+      "https://images.unsplash.com/photo-1529900748604-07564a03e7a6?w=800"
+    ],
+    "isNew": true,
+    "isVerified": false,
+    "isFeatured": false,
+    "area": 4000,
+    "trainerCount": 8,
+    "established": 2018,
+    "tags": ["Futbol", "Jamoa", "Maydon"],
+    "maxCapacity": 133,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@championsfield",
+      "telegram": "@fb-002"
+    },
+    "weekdayHours": "07:00–23:00",
+    "weekendHours": "07:00–23:00",
+    "features": [
+      "Pitch Rental",
+      "Youth Academy",
+      "Natural Grass",
+      "Changing Rooms"
+    ]
+  },
+  {
+    "id": "fb-003",
+    "name": "Registan Futbol Club",
+    "type": "football",
+    "description": "Football complex near historic Registan with mini and full-size pitches.",
+    "address": "University blvd. 12",
+    "city": "Samarkand",
+    "lat": 39.65,
+    "lng": 66.965,
+    "rating": 4.2,
+    "reviewCount": 128,
+    "priceRange": "$",
+    "monthlyPrice": 200000,
+    "openingHours": "07:00–22:00",
+    "phone": "+998 66 233 9012",
+    "services": ["Pitch Rental", "Coaching", "Friendly Matches"],
+    "amenities": ["Changing Rooms", "Floodlights", "Parking"],
+    "images": [
+      "https://images.unsplash.com/photo-1529900748604-07564a03e7a6?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1529900748604-07564a03e7a6?w=800"
+    ],
+    "isNew": false,
+    "isVerified": true,
+    "isFeatured": false,
+    "area": 2000,
+    "trainerCount": 4,
+    "established": 2020,
+    "tags": ["Futbol", "Jamoa", "Maydon"],
+    "maxCapacity": 66,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@registanfutbolclub",
+      "telegram": "@fb-003"
+    },
+    "weekdayHours": "07:00–22:00",
+    "weekendHours": "07:00–22:00",
+    "features": ["Pitch Rental", "Coaching", "Changing Rooms", "Floodlights"]
+  },
+  {
+    "id": "fb-004",
+    "name": "Andijan Sports Ground",
+    "type": "football",
+    "description": "Large outdoor football grounds with spectator stands and evening floodlight games.",
+    "address": "Bobur str. 8",
+    "city": "Andijan",
+    "lat": 40.783,
+    "lng": 72.344,
+    "rating": 4,
+    "reviewCount": 85,
+    "priceRange": "$",
+    "monthlyPrice": 150000,
+    "openingHours": "06:00–22:00",
+    "phone": "+998 74 223 4567",
+    "services": ["Pitch Rental", "Weekend Leagues"],
+    "amenities": ["Stands", "Floodlights", "Changing Rooms"],
+    "images": [
+      "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=800"
+    ],
+    "isNew": false,
+    "isVerified": false,
+    "isFeatured": false,
+    "area": 5000,
+    "trainerCount": 3,
+    "established": 2019,
+    "tags": ["Futbol", "Jamoa", "Maydon"],
+    "maxCapacity": 166,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@andijansportsground",
+      "telegram": "@fb-004"
+    },
+    "weekdayHours": "06:00–22:00",
+    "weekendHours": "06:00–22:00",
+    "features": ["Pitch Rental", "Weekend Leagues", "Stands", "Floodlights"]
+  },
+  {
+    "id": "fb-005",
+    "name": "Striker Zone Namangan",
+    "type": "football",
+    "description": "Indoor and outdoor football with synthetic turf, night games, and weekly leagues.",
+    "address": "Uychi str. 17",
+    "city": "Namangan",
+    "lat": 40.996,
+    "lng": 71.669,
+    "rating": 4.3,
+    "reviewCount": 102,
+    "priceRange": "$",
+    "monthlyPrice": 180000,
+    "openingHours": "06:00–23:00",
+    "phone": "+998 69 235 6789",
+    "services": ["Indoor Pitch", "Night Games", "Weekly Leagues"],
+    "amenities": ["Synthetic Turf", "Changing Rooms", "Showers", "Floodlights"],
+    "images": [
+      "https://images.unsplash.com/photo-1529900748604-07564a03e7a6?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1529900748604-07564a03e7a6?w=800",
+      "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=800"
+    ],
+    "isNew": false,
+    "isVerified": true,
+    "isFeatured": false,
+    "area": 2500,
+    "trainerCount": 5,
+    "established": 2021,
+    "tags": ["Futbol", "Jamoa", "Maydon"],
+    "maxCapacity": 83,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@strikerzonenamangan",
+      "telegram": "@fb-005"
+    },
+    "weekdayHours": "06:00–23:00",
+    "weekendHours": "06:00–23:00",
+    "features": [
+      "Indoor Pitch",
+      "Night Games",
+      "Synthetic Turf",
+      "Changing Rooms"
+    ]
+  },
+  {
+    "id": "fb-006",
+    "name": "Halqa Football Center",
+    "type": "football",
+    "description": "Premium football venue with VIP lounge, sports bar, and professional coaching staff.",
+    "address": "Mustaqillik str. 60",
+    "city": "Tashkent",
+    "lat": 41.34,
+    "lng": 69.278,
+    "rating": 4.8,
+    "reviewCount": 367,
+    "priceRange": "$$$",
+    "monthlyPrice": 500000,
+    "openingHours": "06:00–01:00",
+    "phone": "+998 71 268 0123",
+    "services": ["VIP Pitch", "Pro Coaching", "Video Analysis", "Sports Bar"],
+    "amenities": [
+      "VIP Lounge",
+      "Sports Bar",
+      "Showers",
+      "Heated Changing Rooms",
+      "Parking"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=800",
+      "https://images.unsplash.com/photo-1529900748604-07564a03e7a6?w=800"
+    ],
+    "isNew": false,
+    "isVerified": false,
+    "isFeatured": false,
+    "area": 3500,
+    "trainerCount": 10,
+    "established": 2017,
+    "tags": ["Futbol", "Jamoa", "Maydon"],
+    "maxCapacity": 116,
+    "languages": ["O'zbekcha", "Ruscha", "English"],
+    "socialMedia": {
+      "instagram": "@halqafootballcenter",
+      "telegram": "@fb-006"
+    },
+    "weekdayHours": "06:00–01:00",
+    "weekendHours": "06:00–01:00",
+    "features": ["VIP Pitch", "Pro Coaching", "VIP Lounge", "Sports Bar"]
+  }
+]

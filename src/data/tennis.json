@@ -1,0 +1,269 @@
+[
+  {
+    "id": "tn-001",
+    "name": "Ace Tennis Academy",
+    "type": "tennis",
+    "description": "International-standard tennis courts with clay and hard surfaces. Junior and adult programs.",
+    "address": "Bodomzor str. 22",
+    "city": "Tashkent",
+    "lat": 41.325,
+    "lng": 69.281,
+    "rating": 4.8,
+    "reviewCount": 267,
+    "priceRange": "$$$",
+    "monthlyPrice": 600000,
+    "openingHours": "06:00–22:00",
+    "phone": "+998 71 254 1234",
+    "services": ["Court Rental", "Coaching", "Junior Academy", "Tournaments"],
+    "amenities": ["Clay Courts", "Hard Courts", "Pro Shop", "Showers", "Cafe"],
+    "images": [
+      "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800",
+      "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=800"
+    ],
+    "isNew": true,
+    "isVerified": true,
+    "isFeatured": true,
+    "area": 2000,
+    "trainerCount": 5,
+    "established": 2015,
+    "tags": ["Tennis", "Kort", "Raketka"],
+    "maxCapacity": 200,
+    "languages": ["O'zbekcha", "Ruscha", "English"],
+    "socialMedia": {
+      "instagram": "@acetennisacademy",
+      "telegram": "@tn-001"
+    },
+    "weekdayHours": "06:00–22:00",
+    "weekendHours": "06:00–22:00",
+    "features": ["Court Rental", "Coaching", "Clay Courts", "Hard Courts"]
+  },
+  {
+    "id": "tn-002",
+    "name": "Grand Slam Tashkent",
+    "type": "tennis",
+    "description": "Premium tennis club with indoor and outdoor courts, ball machine rental, and group lessons.",
+    "address": "Kichik Halqa Yuli 5",
+    "city": "Tashkent",
+    "lat": 41.315,
+    "lng": 69.254,
+    "rating": 4.6,
+    "reviewCount": 195,
+    "priceRange": "$$",
+    "monthlyPrice": 450000,
+    "openingHours": "07:00–22:00",
+    "phone": "+998 71 258 5678",
+    "services": [
+      "Indoor Courts",
+      "Ball Machine",
+      "Group Lessons",
+      "Private Coaching"
+    ],
+    "amenities": ["Indoor Courts", "Outdoor Courts", "Showers", "Parking"],
+    "images": [
+      "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=800",
+      "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800"
+    ],
+    "isNew": true,
+    "isVerified": false,
+    "isFeatured": false,
+    "area": 1800,
+    "trainerCount": 7,
+    "established": 2017,
+    "tags": ["Tennis", "Kort", "Raketka"],
+    "maxCapacity": 180,
+    "languages": ["O'zbekcha", "Ruscha", "English"],
+    "socialMedia": {
+      "instagram": "@grandslamtashkent",
+      "telegram": "@tn-002"
+    },
+    "weekdayHours": "07:00–22:00",
+    "weekendHours": "07:00–22:00",
+    "features": [
+      "Indoor Courts",
+      "Ball Machine",
+      "Indoor Courts",
+      "Outdoor Courts"
+    ]
+  },
+  {
+    "id": "tn-003",
+    "name": "Baseline Tennis Club",
+    "type": "tennis",
+    "description": "Community tennis club with affordable court fees and weekend social mixers.",
+    "address": "Amir Temur str. 70",
+    "city": "Samarkand",
+    "lat": 39.66,
+    "lng": 66.968,
+    "rating": 4.2,
+    "reviewCount": 98,
+    "priceRange": "$",
+    "monthlyPrice": 200000,
+    "openingHours": "07:00–21:00",
+    "phone": "+998 66 237 9012",
+    "services": ["Court Rental", "Social Events", "Beginner Lessons"],
+    "amenities": ["Outdoor Courts", "Changing Rooms", "Parking"],
+    "images": [
+      "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800"
+    ],
+    "isNew": false,
+    "isVerified": true,
+    "isFeatured": false,
+    "area": 1000,
+    "trainerCount": 3,
+    "established": 2020,
+    "tags": ["Tennis", "Kort", "Raketka"],
+    "maxCapacity": 100,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@baselinetennisclub",
+      "telegram": "@tn-003"
+    },
+    "weekdayHours": "07:00–21:00",
+    "weekendHours": "07:00–21:00",
+    "features": [
+      "Court Rental",
+      "Social Events",
+      "Outdoor Courts",
+      "Changing Rooms"
+    ]
+  },
+  {
+    "id": "tn-004",
+    "name": "Tashkent Tennis Park",
+    "type": "tennis",
+    "description": "Public park with 8 outdoor courts, floodlighting, and seasonal coaching camps.",
+    "address": "Nukus str. 40",
+    "city": "Tashkent",
+    "lat": 41.307,
+    "lng": 69.235,
+    "rating": 4.1,
+    "reviewCount": 134,
+    "priceRange": "$",
+    "monthlyPrice": 180000,
+    "openingHours": "06:00–22:00",
+    "phone": "+998 71 242 3456",
+    "services": ["Court Rental", "Seasonal Camps", "Coaching"],
+    "amenities": ["Floodlights", "Restrooms", "Water Fountains", "Parking"],
+    "images": [
+      "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=800"
+    ],
+    "isNew": false,
+    "isVerified": false,
+    "isFeatured": false,
+    "area": 2500,
+    "trainerCount": 4,
+    "established": 2018,
+    "tags": ["Tennis", "Kort", "Raketka"],
+    "maxCapacity": 250,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@tashkenttennispark",
+      "telegram": "@tn-004"
+    },
+    "weekdayHours": "06:00–22:00",
+    "weekendHours": "06:00–22:00",
+    "features": ["Court Rental", "Seasonal Camps", "Floodlights", "Restrooms"]
+  },
+  {
+    "id": "tn-005",
+    "name": "Deuce Tennis Bukhara",
+    "type": "tennis",
+    "description": "Boutique tennis facility with private coaching and equipment rental service.",
+    "address": "M. Ikbol str. 15",
+    "city": "Bukhara",
+    "lat": 39.771,
+    "lng": 64.432,
+    "rating": 4.3,
+    "reviewCount": 72,
+    "priceRange": "$$",
+    "monthlyPrice": 300000,
+    "openingHours": "07:00–21:00",
+    "phone": "+998 65 224 7890",
+    "services": ["Private Coaching", "Equipment Rental", "Court Booking"],
+    "amenities": ["Showers", "Equipment Shop", "Parking"],
+    "images": [
+      "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=800"
+    ],
+    "isNew": false,
+    "isVerified": true,
+    "isFeatured": false,
+    "area": 800,
+    "trainerCount": 3,
+    "established": 2021,
+    "tags": ["Tennis", "Kort", "Raketka"],
+    "maxCapacity": 80,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@deucetennisbukhara",
+      "telegram": "@tn-005"
+    },
+    "weekdayHours": "07:00–21:00",
+    "weekendHours": "07:00–21:00",
+    "features": [
+      "Private Coaching",
+      "Equipment Rental",
+      "Showers",
+      "Equipment Shop"
+    ]
+  },
+  {
+    "id": "tn-006",
+    "name": "Match Point Fergana",
+    "type": "tennis",
+    "description": "Indoor tennis facility serving the Fergana Valley with year-round play capability.",
+    "address": "Navoi str. 28",
+    "city": "Fergana",
+    "lat": 40.382,
+    "lng": 71.791,
+    "rating": 4,
+    "reviewCount": 56,
+    "priceRange": "$",
+    "monthlyPrice": 160000,
+    "openingHours": "08:00–20:00",
+    "phone": "+998 73 246 1234",
+    "services": ["Court Rental", "Group Lessons"],
+    "amenities": ["Indoor Courts", "Changing Rooms"],
+    "images": [
+      "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?w=800"
+    ],
+    "isNew": false,
+    "isVerified": false,
+    "isFeatured": false,
+    "area": 600,
+    "trainerCount": 2,
+    "established": 2022,
+    "tags": ["Tennis", "Kort", "Raketka"],
+    "maxCapacity": 60,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@matchpointfergana",
+      "telegram": "@tn-006"
+    },
+    "weekdayHours": "08:00–20:00",
+    "weekendHours": "08:00–20:00",
+    "features": [
+      "Court Rental",
+      "Group Lessons",
+      "Indoor Courts",
+      "Changing Rooms"
+    ]
+  }
+]

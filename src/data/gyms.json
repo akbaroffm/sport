@@ -1,0 +1,340 @@
+[
+  {
+    "id": "gym-001",
+    "name": "Powerhouse Gym Tashkent",
+    "type": "gym",
+    "description": "Premium fitness center with state-of-the-art equipment, personal trainers, and recovery zone. Located in the heart of Tashkent.",
+    "address": "Amir Temur str. 45",
+    "city": "Tashkent",
+    "lat": 41.3111,
+    "lng": 69.2797,
+    "rating": 4.8,
+    "reviewCount": 342,
+    "priceRange": "$$",
+    "monthlyPrice": 450000,
+    "openingHours": "06:00–23:00",
+    "phone": "+998 71 200 1001",
+    "services": [
+      "Personal Training",
+      "Group Classes",
+      "Nutrition Consulting",
+      "Body Composition Analysis"
+    ],
+    "amenities": ["Showers", "Locker Rooms", "Sauna", "Parking", "Wi-Fi"],
+    "images": [
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800",
+      "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800",
+      "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800"
+    ],
+    "isNew": true,
+    "isVerified": true,
+    "isFeatured": true,
+    "area": 350,
+    "trainerCount": 8,
+    "established": 2018,
+    "tags": ["Fitnes", "Kuch", "Kardio"],
+    "maxCapacity": 35,
+    "languages": ["O'zbekcha", "Ruscha", "English"],
+    "socialMedia": {
+      "instagram": "@powerhousegymtashkent",
+      "telegram": "@gym-001"
+    },
+    "weekdayHours": "06:00–23:00",
+    "weekendHours": "06:00–23:00",
+    "features": [
+      "Personal Training",
+      "Group Classes",
+      "Showers",
+      "Locker Rooms"
+    ]
+  },
+  {
+    "id": "gym-002",
+    "name": "Silk Road Fitness",
+    "type": "gym",
+    "description": "Modern fitness facility offering functional training, cardio zone, and dedicated stretching area in Samarkand.",
+    "address": "Registan str. 12",
+    "city": "Samarkand",
+    "lat": 39.6542,
+    "lng": 66.9597,
+    "rating": 4.5,
+    "reviewCount": 198,
+    "priceRange": "$$",
+    "monthlyPrice": 350000,
+    "openingHours": "07:00–22:00",
+    "phone": "+998 66 233 4455",
+    "services": ["Personal Training", "Group Fitness", "Cardio Zone"],
+    "amenities": ["Showers", "Locker Rooms", "Parking"],
+    "images": [
+      "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800",
+      "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800"
+    ],
+    "isNew": true,
+    "isVerified": false,
+    "isFeatured": false,
+    "area": 800,
+    "trainerCount": 5,
+    "established": 2020,
+    "tags": ["Fitnes", "Kuch", "Kardio"],
+    "maxCapacity": 80,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@silkroadfitness",
+      "telegram": "@gym-002"
+    },
+    "weekdayHours": "07:00–22:00",
+    "weekendHours": "07:00–22:00",
+    "features": [
+      "Personal Training",
+      "Group Fitness",
+      "Showers",
+      "Locker Rooms"
+    ]
+  },
+  {
+    "id": "gym-003",
+    "name": "Iron Body Club",
+    "type": "gym",
+    "description": "Hardcore bodybuilding gym with competition-grade equipment, posing room, and expert coaches.",
+    "address": "Buyuk Ipak Yuli 78",
+    "city": "Tashkent",
+    "lat": 41.2995,
+    "lng": 69.2401,
+    "rating": 4.7,
+    "reviewCount": 276,
+    "priceRange": "$$$",
+    "monthlyPrice": 600000,
+    "openingHours": "05:30–23:30",
+    "phone": "+998 71 255 6677",
+    "services": [
+      "Bodybuilding Coaching",
+      "Supplement Shop",
+      "Competition Prep"
+    ],
+    "amenities": ["Showers", "Sauna", "Locker Rooms", "Protein Bar", "Parking"],
+    "images": [
+      "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800",
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800"
+    ],
+    "isNew": false,
+    "isVerified": true,
+    "isFeatured": false,
+    "area": 1200,
+    "trainerCount": 12,
+    "established": 2016,
+    "tags": ["Fitnes", "Kuch", "Kardio"],
+    "maxCapacity": 120,
+    "languages": ["O'zbekcha", "Ruscha", "English"],
+    "socialMedia": {
+      "instagram": "@ironbodyclub",
+      "telegram": "@gym-003"
+    },
+    "weekdayHours": "05:30–23:30",
+    "weekendHours": "05:30–23:30",
+    "features": ["Bodybuilding Coaching", "Supplement Shop", "Showers", "Sauna"]
+  },
+  {
+    "id": "gym-004",
+    "name": "FitZone Bukhara",
+    "type": "gym",
+    "description": "Family-friendly gym with separate ladies' section, kids' area, and modern cardio machines.",
+    "address": "Nakshbandi str. 33",
+    "city": "Bukhara",
+    "lat": 39.7747,
+    "lng": 64.4286,
+    "rating": 4.3,
+    "reviewCount": 145,
+    "priceRange": "$",
+    "monthlyPrice": 250000,
+    "openingHours": "06:00–22:00",
+    "phone": "+998 65 221 3344",
+    "services": ["Group Classes", "Ladies Section", "Kids Zone"],
+    "amenities": ["Showers", "Locker Rooms", "Parking", "Wi-Fi"],
+    "images": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800",
+      "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800"
+    ],
+    "isNew": false,
+    "isVerified": false,
+    "isFeatured": false,
+    "area": 500,
+    "trainerCount": 4,
+    "established": 2021,
+    "tags": ["Fitnes", "Kuch", "Kardio"],
+    "maxCapacity": 50,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@fitzonebukhara",
+      "telegram": "@gym-004"
+    },
+    "weekdayHours": "06:00–22:00",
+    "weekendHours": "06:00–22:00",
+    "features": ["Group Classes", "Ladies Section", "Showers", "Locker Rooms"]
+  },
+  {
+    "id": "gym-005",
+    "name": "Atlas Strength Lab",
+    "type": "gym",
+    "description": "Crossfit and strength training facility with Olympic lifting platforms, ropes, and rig systems.",
+    "address": "Mirzo Ulugbek str. 19",
+    "city": "Tashkent",
+    "lat": 41.3385,
+    "lng": 69.3346,
+    "rating": 4.9,
+    "reviewCount": 410,
+    "priceRange": "$$$",
+    "monthlyPrice": 550000,
+    "openingHours": "06:00–22:00",
+    "phone": "+998 71 277 8899",
+    "services": [
+      "CrossFit",
+      "Olympic Lifting",
+      "Mobility Classes",
+      "Nutrition Plans"
+    ],
+    "amenities": [
+      "Showers",
+      "Locker Rooms",
+      "Recovery Room",
+      "Parking",
+      "Cafe"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800",
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800",
+      "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800"
+    ],
+    "isNew": false,
+    "isVerified": true,
+    "isFeatured": false,
+    "area": 650,
+    "trainerCount": 10,
+    "established": 2019,
+    "tags": ["Fitnes", "Kuch", "Kardio"],
+    "maxCapacity": 65,
+    "languages": ["O'zbekcha", "Ruscha", "English"],
+    "socialMedia": {
+      "instagram": "@atlasstrengthlab",
+      "telegram": "@gym-005"
+    },
+    "weekdayHours": "06:00–22:00",
+    "weekendHours": "06:00–22:00",
+    "features": ["CrossFit", "Olympic Lifting", "Showers", "Locker Rooms"]
+  },
+  {
+    "id": "gym-006",
+    "name": "Namangan Fitness Hub",
+    "type": "gym",
+    "description": "The largest gym in Namangan with cardio, free weights, and group class studios.",
+    "address": "Navoi str. 55",
+    "city": "Namangan",
+    "lat": 41.0011,
+    "lng": 71.6726,
+    "rating": 4.2,
+    "reviewCount": 98,
+    "priceRange": "$",
+    "monthlyPrice": 200000,
+    "openingHours": "07:00–21:00",
+    "phone": "+998 69 234 5566",
+    "services": ["Group Classes", "Personal Training", "Cardio Zone"],
+    "amenities": ["Showers", "Locker Rooms", "Wi-Fi"],
+    "images": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800"
+    ],
+    "isNew": false,
+    "isVerified": false,
+    "isFeatured": false,
+    "area": 400,
+    "trainerCount": 3,
+    "established": 2022,
+    "tags": ["Fitnes", "Kuch", "Kardio"],
+    "maxCapacity": 40,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@namanganfitnesshub",
+      "telegram": "@gym-006"
+    },
+    "weekdayHours": "07:00–21:00",
+    "weekendHours": "07:00–21:00",
+    "features": [
+      "Group Classes",
+      "Personal Training",
+      "Showers",
+      "Locker Rooms"
+    ]
+  },
+  {
+    "id": "gym-007",
+    "name": "Peak Performance Tashkent",
+    "type": "gym",
+    "description": "High-end boutique gym for professionals. Private training rooms, executive locker room, and spa.",
+    "address": "Shota Rustaveli str. 8",
+    "city": "Tashkent",
+    "lat": 41.322,
+    "lng": 69.255,
+    "rating": 4.9,
+    "reviewCount": 520,
+    "priceRange": "$$$",
+    "monthlyPrice": 900000,
+    "openingHours": "05:00–00:00",
+    "phone": "+998 71 299 0011",
+    "services": [
+      "Executive Training",
+      "Spa",
+      "Recovery",
+      "Nutrition",
+      "Physiotherapy"
+    ],
+    "amenities": [
+      "Spa",
+      "Steam Room",
+      "Sauna",
+      "Towel Service",
+      "Valet Parking",
+      "Juice Bar"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800",
+      "https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=800",
+      "https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800",
+      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800"
+    ],
+    "isNew": false,
+    "isVerified": true,
+    "isFeatured": false,
+    "area": 1500,
+    "trainerCount": 15,
+    "established": 2015,
+    "tags": ["Fitnes", "Kuch", "Kardio"],
+    "maxCapacity": 150,
+    "languages": ["O'zbekcha", "Ruscha", "English"],
+    "socialMedia": {
+      "instagram": "@peakperformancetashkent",
+      "telegram": "@gym-007"
+    },
+    "weekdayHours": "05:00–00:00",
+    "weekendHours": "05:00–00:00",
+    "features": ["Executive Training", "Spa", "Spa", "Steam Room"]
+  }
+]

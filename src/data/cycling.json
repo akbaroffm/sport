@@ -1,0 +1,264 @@
+[
+  {
+    "id": "cyc-001",
+    "name": "Velo Club Tashkent",
+    "type": "cycling",
+    "description": "Cycling club with group rides, bike fitting, indoor trainers, and weekly time trials.",
+    "address": "Sayilgoh str. 50",
+    "city": "Tashkent",
+    "lat": 41.312,
+    "lng": 69.279,
+    "rating": 4.7,
+    "reviewCount": 223,
+    "priceRange": "$$",
+    "monthlyPrice": 350000,
+    "openingHours": "06:00–21:00",
+    "phone": "+998 71 253 4455",
+    "services": [
+      "Group Rides",
+      "Bike Fitting",
+      "Indoor Training",
+      "Time Trials"
+    ],
+    "amenities": ["Bike Storage", "Repair Shop", "Showers", "Cafe"],
+    "images": [
+      "https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=800",
+      "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800"
+    ],
+    "isNew": true,
+    "isVerified": true,
+    "isFeatured": true,
+    "area": 300,
+    "trainerCount": 5,
+    "established": 2018,
+    "tags": ["Velosiped", "Kardio", "Sayohat"],
+    "maxCapacity": 30,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@veloclubtashkent",
+      "telegram": "@cyc-001"
+    },
+    "weekdayHours": "06:00–21:00",
+    "weekendHours": "06:00–21:00",
+    "features": ["Group Rides", "Bike Fitting", "Bike Storage", "Repair Shop"]
+  },
+  {
+    "id": "cyc-002",
+    "name": "Pedal Power Samarkand",
+    "type": "cycling",
+    "description": "Cycling tours through historic Samarkand with bike rental and guided heritage rides.",
+    "address": "Bukhara str. 8",
+    "city": "Samarkand",
+    "lat": 39.661,
+    "lng": 66.971,
+    "rating": 4.5,
+    "reviewCount": 156,
+    "priceRange": "$$",
+    "monthlyPrice": 300000,
+    "openingHours": "07:00–20:00",
+    "phone": "+998 66 234 6677",
+    "services": ["Heritage Rides", "Bike Rental", "Group Tours", "Maintenance"],
+    "amenities": ["Bike Rental", "Helmets", "Water Stations", "Guide"],
+    "images": [
+      "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800",
+      "https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=800"
+    ],
+    "isNew": true,
+    "isVerified": false,
+    "isFeatured": false,
+    "area": 200,
+    "trainerCount": 4,
+    "established": 2019,
+    "tags": ["Velosiped", "Kardio", "Sayohat"],
+    "maxCapacity": 20,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@pedalpowersamarkand",
+      "telegram": "@cyc-002"
+    },
+    "weekdayHours": "07:00–20:00",
+    "weekendHours": "07:00–20:00",
+    "features": ["Heritage Rides", "Bike Rental", "Bike Rental", "Helmets"]
+  },
+  {
+    "id": "cyc-003",
+    "name": "Sprint Cycling Hub",
+    "type": "cycling",
+    "description": "Competitive cycling training center with velodrome access and performance analysis.",
+    "address": "Olmazor str. 15",
+    "city": "Tashkent",
+    "lat": 41.338,
+    "lng": 69.22,
+    "rating": 4.8,
+    "reviewCount": 189,
+    "priceRange": "$$$",
+    "monthlyPrice": 500000,
+    "openingHours": "05:30–21:00",
+    "phone": "+998 71 276 8899",
+    "services": [
+      "Velodrome",
+      "Performance Analysis",
+      "Race Training",
+      "Equipment"
+    ],
+    "amenities": ["Velodrome", "Gym", "Showers", "Video Analysis Room"],
+    "images": [
+      "https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=800"
+    ],
+    "isNew": false,
+    "isVerified": true,
+    "isFeatured": false,
+    "area": 800,
+    "trainerCount": 7,
+    "established": 2017,
+    "tags": ["Velosiped", "Kardio", "Sayohat"],
+    "maxCapacity": 80,
+    "languages": ["O'zbekcha", "Ruscha", "English"],
+    "socialMedia": {
+      "instagram": "@sprintcyclinghub",
+      "telegram": "@cyc-003"
+    },
+    "weekdayHours": "05:30–21:00",
+    "weekendHours": "05:30–21:00",
+    "features": ["Velodrome", "Performance Analysis", "Velodrome", "Gym"]
+  },
+  {
+    "id": "cyc-004",
+    "name": "Mountain Bike Fergana",
+    "type": "cycling",
+    "description": "Mountain biking trails and rentals in the beautiful Fergana Valley foothills.",
+    "address": "Margilan str. 20",
+    "city": "Fergana",
+    "lat": 40.375,
+    "lng": 71.78,
+    "rating": 4.4,
+    "reviewCount": 98,
+    "priceRange": "$",
+    "monthlyPrice": 200000,
+    "openingHours": "06:00–19:00",
+    "phone": "+998 73 247 2233",
+    "services": [
+      "Trail Rides",
+      "MTB Rental",
+      "Skills Coaching",
+      "Guided Tours"
+    ],
+    "amenities": ["Bike Rental", "Repair Station", "Water", "First Aid"],
+    "images": [
+      "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800"
+    ],
+    "isNew": false,
+    "isVerified": false,
+    "isFeatured": false,
+    "area": 100,
+    "trainerCount": 3,
+    "established": 2020,
+    "tags": ["Velosiped", "Kardio", "Sayohat"],
+    "maxCapacity": 10,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@mountainbikefergana",
+      "telegram": "@cyc-004"
+    },
+    "weekdayHours": "06:00–19:00",
+    "weekendHours": "06:00–19:00",
+    "features": ["Trail Rides", "MTB Rental", "Bike Rental", "Repair Station"]
+  },
+  {
+    "id": "cyc-005",
+    "name": "Urban Cycle Studio",
+    "type": "cycling",
+    "description": "Indoor cycling studio with spin classes, rhythm rides, and endurance training.",
+    "address": "Navoiy str. 100",
+    "city": "Tashkent",
+    "lat": 41.32,
+    "lng": 69.29,
+    "rating": 4.6,
+    "reviewCount": 245,
+    "priceRange": "$$",
+    "monthlyPrice": 380000,
+    "openingHours": "06:00–22:00",
+    "phone": "+998 71 249 4455",
+    "services": [
+      "Spin Classes",
+      "Rhythm Rides",
+      "Endurance Training",
+      "Heart Rate Zones"
+    ],
+    "amenities": ["Peloton Bikes", "Showers", "Towel Service", "Water"],
+    "images": [
+      "https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=800"
+    ],
+    "isNew": false,
+    "isVerified": true,
+    "isFeatured": false,
+    "area": 400,
+    "trainerCount": 6,
+    "established": 2019,
+    "tags": ["Velosiped", "Kardio", "Sayohat"],
+    "maxCapacity": 40,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@urbancyclestudio",
+      "telegram": "@cyc-005"
+    },
+    "weekdayHours": "06:00–22:00",
+    "weekendHours": "06:00–22:00",
+    "features": ["Spin Classes", "Rhythm Rides", "Peloton Bikes", "Showers"]
+  },
+  {
+    "id": "cyc-006",
+    "name": "Bukhara Bike Tours",
+    "type": "cycling",
+    "description": "Scenic cycling routes through Bukhara's old town with professional guides.",
+    "address": "Lyabi-Hauz str. 3",
+    "city": "Bukhara",
+    "lat": 39.774,
+    "lng": 64.418,
+    "rating": 4.3,
+    "reviewCount": 112,
+    "priceRange": "$",
+    "monthlyPrice": 180000,
+    "openingHours": "07:00–19:00",
+    "phone": "+998 65 223 6677",
+    "services": ["City Tours", "Bike Rental", "Photo Rides"],
+    "amenities": ["Bike Rental", "Helmets", "Guide", "Snacks"],
+    "images": [
+      "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1517649763962-0c623066013b?w=800"
+    ],
+    "isNew": false,
+    "isVerified": false,
+    "isFeatured": false,
+    "area": 150,
+    "trainerCount": 3,
+    "established": 2021,
+    "tags": ["Velosiped", "Kardio", "Sayohat"],
+    "maxCapacity": 15,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@bukharabiketours",
+      "telegram": "@cyc-006"
+    },
+    "weekdayHours": "07:00–19:00",
+    "weekendHours": "07:00–19:00",
+    "features": ["City Tours", "Bike Rental", "Bike Rental", "Helmets"]
+  }
+]

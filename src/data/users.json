@@ -1,0 +1,52 @@
+[
+  {
+    "id": "user-001",
+    "name": "Aziz Karimov",
+    "email": "aziz@example.com",
+    "password": "sport123",
+    "avatar": null,
+    "city": "Tashkent",
+    "memberSince": "2024-03-15",
+    "favoriteCount": 5
+  },
+  {
+    "id": "user-002",
+    "name": "Dilnoza Rashidova",
+    "email": "dilnoza@example.com",
+    "password": "fitness456",
+    "avatar": null,
+    "city": "Samarkand",
+    "memberSince": "2024-06-20",
+    "favoriteCount": 8
+  },
+  {
+    "id": "user-003",
+    "name": "Bobur Alimov",
+    "email": "bobur@example.com",
+    "password": "gym789",
+    "avatar": null,
+    "city": "Bukhara",
+    "memberSince": "2025-01-10",
+    "favoriteCount": 3
+  },
+  {
+    "id": "user-004",
+    "name": "Madina Yusupova",
+    "email": "madina@example.com",
+    "password": "yoga321",
+    "avatar": null,
+    "city": "Tashkent",
+    "memberSince": "2024-11-05",
+    "favoriteCount": 12
+  },
+  {
+    "id": "user-005",
+    "name": "Jasur Toshmatov",
+    "email": "jasur@example.com",
+    "password": "climb654",
+    "avatar": null,
+    "city": "Fergana",
+    "memberSince": "2025-02-28",
+    "favoriteCount": 2
+  }
+]

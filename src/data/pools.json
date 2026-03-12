@@ -1,0 +1,274 @@
+[
+  {
+    "id": "pool-001",
+    "name": "Aqua Palace Tashkent",
+    "type": "pool",
+    "description": "Olympic-size swimming pool with lane reservations, swim coaching, and aqua aerobics programs.",
+    "address": "Chilanzar Block 10, str. 3",
+    "city": "Tashkent",
+    "lat": 41.2856,
+    "lng": 69.2085,
+    "rating": 4.6,
+    "reviewCount": 289,
+    "priceRange": "$$",
+    "monthlyPrice": 400000,
+    "openingHours": "06:00–22:00",
+    "phone": "+998 71 245 6789",
+    "services": [
+      "Swim Coaching",
+      "Aqua Aerobics",
+      "Lane Booking",
+      "Kids Swim School"
+    ],
+    "amenities": [
+      "Showers",
+      "Locker Rooms",
+      "Hair Dryers",
+      "Towel Rental",
+      "Cafe"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800",
+      "https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=800",
+      "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=800"
+    ],
+    "isNew": true,
+    "isVerified": true,
+    "isFeatured": true,
+    "area": 1000,
+    "trainerCount": 4,
+    "established": 2017,
+    "tags": ["Suzish", "Aqua", "Basseyn"],
+    "maxCapacity": 50,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@aquapalacetashkent",
+      "telegram": "@pool-001"
+    },
+    "weekdayHours": "06:00–22:00",
+    "weekendHours": "06:00–22:00",
+    "features": ["Swim Coaching", "Aqua Aerobics", "Showers", "Locker Rooms"]
+  },
+  {
+    "id": "pool-002",
+    "name": "Blue Wave Samarkand",
+    "type": "pool",
+    "description": "Indoor heated pool with water slides, kids section, and adult lap swimming.",
+    "address": "Gagarin str. 20",
+    "city": "Samarkand",
+    "lat": 39.672,
+    "lng": 66.941,
+    "rating": 4.3,
+    "reviewCount": 156,
+    "priceRange": "$",
+    "monthlyPrice": 280000,
+    "openingHours": "08:00–21:00",
+    "phone": "+998 66 240 1122",
+    "services": ["Kids Swimming", "Lap Lanes", "Water Slides"],
+    "amenities": ["Showers", "Locker Rooms", "Parking"],
+    "images": [
+      "https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=800",
+      "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800"
+    ],
+    "isNew": true,
+    "isVerified": false,
+    "isFeatured": false,
+    "area": 600,
+    "trainerCount": 3,
+    "established": 2019,
+    "tags": ["Suzish", "Aqua", "Basseyn"],
+    "maxCapacity": 30,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@bluewavesamarkand",
+      "telegram": "@pool-002"
+    },
+    "weekdayHours": "08:00–21:00",
+    "weekendHours": "08:00–21:00",
+    "features": ["Kids Swimming", "Lap Lanes", "Showers", "Locker Rooms"]
+  },
+  {
+    "id": "pool-003",
+    "name": "Dolphin Swimming Center",
+    "type": "pool",
+    "description": "Professional training pool used by national swim teams. Spectator seating and warm-up pool.",
+    "address": "Yunusabad st. 5, Block 14",
+    "city": "Tashkent",
+    "lat": 41.355,
+    "lng": 69.285,
+    "rating": 4.7,
+    "reviewCount": 210,
+    "priceRange": "$$",
+    "monthlyPrice": 500000,
+    "openingHours": "05:30–22:00",
+    "phone": "+998 71 260 3344",
+    "services": [
+      "Competition Training",
+      "Kids Academy",
+      "Diving",
+      "Water Polo"
+    ],
+    "amenities": [
+      "Showers",
+      "Locker Rooms",
+      "Spectator Gallery",
+      "Warm-up Pool",
+      "Parking"
+    ],
+    "images": [
+      "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=800",
+      "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800"
+    ],
+    "isNew": false,
+    "isVerified": true,
+    "isFeatured": false,
+    "area": 1500,
+    "trainerCount": 8,
+    "established": 2014,
+    "tags": ["Suzish", "Aqua", "Basseyn"],
+    "maxCapacity": 75,
+    "languages": ["O'zbekcha", "Ruscha", "English"],
+    "socialMedia": {
+      "instagram": "@dolphinswimmingcenter",
+      "telegram": "@pool-003"
+    },
+    "weekdayHours": "05:30–22:00",
+    "weekendHours": "05:30–22:00",
+    "features": [
+      "Competition Training",
+      "Kids Academy",
+      "Showers",
+      "Locker Rooms"
+    ]
+  },
+  {
+    "id": "pool-004",
+    "name": "Oasis Pool & Spa",
+    "type": "pool",
+    "description": "Resort-style pool with spa treatments, poolside lounge, and family splash zone.",
+    "address": "Amir Temur str. 102",
+    "city": "Bukhara",
+    "lat": 39.768,
+    "lng": 64.421,
+    "rating": 4.4,
+    "reviewCount": 132,
+    "priceRange": "$$",
+    "monthlyPrice": 350000,
+    "openingHours": "08:00–22:00",
+    "phone": "+998 65 226 5566",
+    "services": ["Spa Treatments", "Family Zone", "Aqua Fitness"],
+    "amenities": ["Showers", "Locker Rooms", "Spa", "Lounge Chairs", "Cafe"],
+    "images": [
+      "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1576013551627-0cc20b96c2a7?w=800",
+      "https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=800"
+    ],
+    "isNew": false,
+    "isVerified": false,
+    "isFeatured": false,
+    "area": 800,
+    "trainerCount": 5,
+    "established": 2020,
+    "tags": ["Suzish", "Aqua", "Basseyn"],
+    "maxCapacity": 40,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@oasispoolspa",
+      "telegram": "@pool-004"
+    },
+    "weekdayHours": "08:00–22:00",
+    "weekendHours": "08:00–22:00",
+    "features": ["Spa Treatments", "Family Zone", "Showers", "Locker Rooms"]
+  },
+  {
+    "id": "pool-005",
+    "name": "Fergana Aquatic Club",
+    "type": "pool",
+    "description": "Community pool with swim lessons, early-morning lap swim, and weekend family sessions.",
+    "address": "Mustaqillik str. 14",
+    "city": "Fergana",
+    "lat": 40.3842,
+    "lng": 71.789,
+    "rating": 4.1,
+    "reviewCount": 87,
+    "priceRange": "$",
+    "monthlyPrice": 200000,
+    "openingHours": "06:00–20:00",
+    "phone": "+998 73 244 7788",
+    "services": ["Swim Lessons", "Lap Swimming", "Family Sessions"],
+    "amenities": ["Showers", "Locker Rooms", "Parking"],
+    "images": [
+      "https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1519315901367-f34ff9154487?w=800"
+    ],
+    "isNew": false,
+    "isVerified": true,
+    "isFeatured": false,
+    "area": 500,
+    "trainerCount": 2,
+    "established": 2021,
+    "tags": ["Suzish", "Aqua", "Basseyn"],
+    "maxCapacity": 25,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@ferganaaquaticclub",
+      "telegram": "@pool-005"
+    },
+    "weekdayHours": "06:00–20:00",
+    "weekendHours": "06:00–20:00",
+    "features": ["Swim Lessons", "Lap Swimming", "Showers", "Locker Rooms"]
+  },
+  {
+    "id": "pool-006",
+    "name": "Golden Pool Nukus",
+    "type": "pool",
+    "description": "Modern indoor pool serving the Karakalpakstan region with heated water year round.",
+    "address": "Berdakh str. 7",
+    "city": "Nukus",
+    "lat": 42.4628,
+    "lng": 59.6003,
+    "rating": 4,
+    "reviewCount": 64,
+    "priceRange": "$",
+    "monthlyPrice": 180000,
+    "openingHours": "07:00–21:00",
+    "phone": "+998 61 222 9900",
+    "services": ["Swim Lessons", "Open Swim", "Aqua Aerobics"],
+    "amenities": ["Showers", "Locker Rooms", "Heated Water"],
+    "images": [
+      "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=800"
+    ],
+    "gallery": [
+      "https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=800"
+    ],
+    "isNew": false,
+    "isVerified": false,
+    "isFeatured": false,
+    "area": 400,
+    "trainerCount": 2,
+    "established": 2023,
+    "tags": ["Suzish", "Aqua", "Basseyn"],
+    "maxCapacity": 20,
+    "languages": ["O'zbekcha", "Ruscha"],
+    "socialMedia": {
+      "instagram": "@goldenpoolnukus",
+      "telegram": "@pool-006"
+    },
+    "weekdayHours": "07:00–21:00",
+    "weekendHours": "07:00–21:00",
+    "features": ["Swim Lessons", "Open Swim", "Showers", "Locker Rooms"]
+  }
+]
