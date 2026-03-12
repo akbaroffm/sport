@@ -88,7 +88,7 @@
               }}</span>
             </div>
             <!-- <span class="text-xs text-slate-400 font-medium"
-              >{{ facility.reviewCount }} ta sharh</span
+              >{{ facility.reviewCount }} ta baho</span
             > -->
           </div>
 
@@ -336,6 +336,48 @@
             <ExternalLink :size="13" /> Google Maps'da ochish
           </a>
         </div>
+
+        <div class="px-4 sm:px-6 lg:px-8 pt-4">
+          <div class="bg-slate-50 rounded-2xl p-3.5">
+            <p class="text-xs text-slate-400 mb-2">Sizning bahoyingiz</p>
+            <div
+              v-if="userStore.isAuthenticated"
+              class="flex items-center justify-between gap-3"
+            >
+              <div class="flex items-center gap-1.5">
+                <button
+                  v-for="n in [1, 2, 3, 4, 5]"
+                  :key="n"
+                  @click="submitRating(n)"
+                  class="p-1 rounded-md transition-colors"
+                  :class="
+                    n <= userRating
+                      ? 'text-amber-500'
+                      : 'text-slate-300 hover:text-amber-400'
+                  "
+                  :title="`${n} yulduz`"
+                >
+                  <Star
+                    :size="18"
+                    :fill="n <= userRating ? 'currentColor' : 'none'"
+                  />
+                </button>
+              </div>
+              <p class="text-xs font-semibold text-slate-500">
+                {{ userRating > 0 ? `${userRating}/5` : "Baholanmagan" }}
+              </p>
+            </div>
+            <div v-else class="text-xs text-slate-500">
+              Reyting qoldirish uchun ro'yxatdan o'ting yoki tizimga kiring.
+              <router-link
+                :to="{ name: 'Login', query: { redirect: $route.fullPath } }"
+                class="text-blue-600 font-semibold ml-1"
+              >
+                Kirish
+              </router-link>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- /Content wrapper -->
 
@@ -401,6 +443,7 @@ import { computed, markRaw, ref } from "vue";
 import { useRoute } from "vue-router";
 import { useSearchStore } from "../stores/searchStore";
 import { useComparisonStore } from "../stores/comparisonStore";
+import { useUserStore } from "../stores/userStore";
 import FacilityGallery from "../components/FacilityGallery.vue";
 import FavoriteButton from "../components/FavoriteButton.vue";
 import MapView from "../components/MapView.vue";
@@ -457,6 +500,7 @@ import {
 const route = useRoute();
 const searchStore = useSearchStore();
 const comparisonStore = useComparisonStore();
+const userStore = useUserStore();
 
 const facility = computed(() => searchStore.getFacilityById(route.params.id));
 const nearby = computed(() =>
@@ -471,6 +515,13 @@ const isInComparison = computed(() =>
 
 const shareToast = ref("");
 const shareToastType = ref("success");
+const userRating = computed(() => {
+  if (!facility.value || !userStore.user?.id) return 0;
+  return searchStore.getUserRatingForFacility(
+    facility.value.id,
+    userStore.user.id,
+  );
+});
 
 const typeLabels = {
   gym: "Zal",
@@ -647,5 +698,17 @@ function showShareToast(msg) {
     shareToast.value = msg;
     shareToastType.value = "success";
   }, 10);
+}
+
+function submitRating(value) {
+  if (!facility.value || !userStore.user?.id) return;
+  const ok = searchStore.submitFacilityRating(
+    facility.value.id,
+    userStore.user.id,
+    value,
+  );
+  if (ok) {
+    showShareToast("Bahoyingiz saqlandi");
+  }
 }
 </script>

@@ -47,10 +47,18 @@ function loadDeletedFacilityIds() {
     return [];
   }
 }
+function loadFacilityUserRatings() {
+  try {
+    return JSON.parse(localStorage.getItem("facility_user_ratings") || "{}");
+  } catch {
+    return {};
+  }
+}
 
 export const useSearchStore = defineStore("search", () => {
   const adminFacilities = ref(loadAdminFacilities());
   const deletedFacilityIds = ref(loadDeletedFacilityIds());
+  const facilityUserRatings = ref(loadFacilityUserRatings());
   const adminFacilityIds = computed(
     () => new Set(adminFacilities.value.map((f) => f.id)),
   );
@@ -413,6 +421,55 @@ export const useSearchStore = defineStore("search", () => {
     );
   }
 
+  function saveFacilityUserRatings() {
+    localStorage.setItem(
+      "facility_user_ratings",
+      JSON.stringify(facilityUserRatings.value),
+    );
+  }
+
+  function getUserRatingForFacility(facilityId, userId) {
+    if (!facilityId || !userId) return 0;
+    return facilityUserRatings.value[facilityId]?.[userId] || 0;
+  }
+
+  function submitFacilityRating(facilityId, userId, value) {
+    const facility = getFacilityById(facilityId);
+    if (!facility || !userId) return false;
+
+    const rating = Math.max(1, Math.min(5, Number(value)));
+    if (!facilityUserRatings.value[facilityId]) {
+      facilityUserRatings.value[facilityId] = {};
+    }
+
+    const prevUserRating =
+      facilityUserRatings.value[facilityId][userId] || null;
+    const prevAvg = Number(facility.rating || 0);
+    const prevCount = Number(facility.reviewCount || 0);
+
+    let nextAvg = prevAvg;
+    let nextCount = prevCount;
+
+    if (prevUserRating) {
+      nextAvg =
+        (prevAvg * prevCount - prevUserRating + rating) /
+        Math.max(prevCount, 1);
+    } else {
+      nextCount = prevCount + 1;
+      nextAvg = (prevAvg * prevCount + rating) / nextCount;
+    }
+
+    facilityUserRatings.value[facilityId][userId] = rating;
+    saveFacilityUserRatings();
+
+    updateFacility(facilityId, {
+      rating: Number(nextAvg.toFixed(1)),
+      reviewCount: nextCount,
+    });
+
+    return true;
+  }
+
   return {
     searchTerm,
     activeCategory,
@@ -455,5 +512,7 @@ export const useSearchStore = defineStore("search", () => {
     removeFacility,
     addCategory,
     removeCategory,
+    submitFacilityRating,
+    getUserRatingForFacility,
   };
 });

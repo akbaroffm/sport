@@ -421,6 +421,46 @@
                   class="w-full px-3 py-2.5 bg-slate-50 rounded-xl text-sm outline-none focus:ring-2 focus:ring-blue-500/30 border border-transparent focus:border-blue-200"
                 />
               </div>
+              <div class="sm:col-span-2">
+                <label class="block text-xs font-semibold text-slate-500 mb-1"
+                  >Hafta kunlari *</label
+                >
+                <div class="flex flex-wrap gap-2 mb-2">
+                  <label
+                    v-for="(day, idx) in weekDays"
+                    :key="day.key"
+                    class="flex items-center gap-1.5 px-2 py-1.5 rounded-lg border cursor-pointer text-xs font-medium select-none"
+                    :class="
+                      form.openDays?.includes(day.key)
+                        ? 'bg-blue-50 border-blue-300 text-blue-700'
+                        : 'bg-white border-slate-200 text-slate-500'
+                    "
+                  >
+                    <input
+                      type="checkbox"
+                      class="sr-only"
+                      :value="day.key"
+                      v-model="form.openDays"
+                    />
+                    <span>{{ day.label }}</span>
+                  </label>
+                  <label
+                    class="flex items-center gap-1.5 px-2 py-1.5 rounded-lg border cursor-pointer text-xs font-medium select-none"
+                    :class="
+                      form.noWeekends
+                        ? 'bg-amber-50 border-amber-300 text-amber-700'
+                        : 'bg-white border-slate-200 text-slate-500'
+                    "
+                  >
+                    <input
+                      type="checkbox"
+                      class="sr-only"
+                      v-model="form.noWeekends"
+                    />
+                    <span>Dam olish kunlarisiz</span>
+                  </label>
+                </div>
+              </div>
               <div>
                 <label class="block text-xs font-semibold text-slate-500 mb-1"
                   >Ish kunlari vaqti</label
@@ -437,8 +477,9 @@
                 >
                 <input
                   v-model="form.weekendHours"
+                  :disabled="form.noWeekends"
                   placeholder="08:00 - 22:00"
-                  class="w-full px-3 py-2.5 bg-slate-50 rounded-xl text-sm outline-none focus:ring-2 focus:ring-blue-500/30 border border-transparent focus:border-blue-200"
+                  class="w-full px-3 py-2.5 bg-slate-50 rounded-xl text-sm outline-none focus:ring-2 focus:ring-blue-500/30 border border-transparent focus:border-blue-200 disabled:opacity-50"
                 />
               </div>
             </div>
@@ -617,104 +658,157 @@
               >
               Qo'shimcha
             </h4>
-            <div class="flex flex-wrap items-center gap-3">
-              <label
-                class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl border cursor-pointer transition-all select-none"
-                :class="
-                  form.isNew
-                    ? 'border-blue-300 bg-blue-50 shadow-sm shadow-blue-100'
-                    : 'border-slate-100 hover:border-slate-200'
-                "
-              >
-                <div class="relative shrink-0">
-                  <input type="checkbox" v-model="form.isNew" class="sr-only" />
-                  <div
-                    class="w-[18px] h-[18px] rounded-md border-2 flex items-center justify-center transition-all"
-                    :class="
-                      form.isNew
-                        ? 'bg-blue-600 border-blue-600'
-                        : 'border-slate-300'
-                    "
-                  >
-                    <Check v-if="form.isNew" :size="12" class="text-white" />
-                  </div>
-                </div>
-                <span
-                  class="text-sm font-medium"
-                  :class="form.isNew ? 'text-blue-700' : 'text-slate-600'"
-                  >Yangi</span
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs font-semibold text-slate-500 mb-1"
+                  >Sig'im (maksimal odam)</label
                 >
-              </label>
-              <label
-                class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl border cursor-pointer transition-all select-none"
-                :class="
-                  form.isVerified
-                    ? 'border-green-300 bg-green-50 shadow-sm shadow-green-100'
-                    : 'border-slate-100 hover:border-slate-200'
-                "
-              >
-                <div class="relative shrink-0">
-                  <input
-                    type="checkbox"
-                    v-model="form.isVerified"
-                    class="sr-only"
-                  />
-                  <div
-                    class="w-[18px] h-[18px] rounded-md border-2 flex items-center justify-center transition-all"
-                    :class="
-                      form.isVerified
-                        ? 'bg-green-600 border-green-600'
-                        : 'border-slate-300'
-                    "
-                  >
-                    <Check
-                      v-if="form.isVerified"
-                      :size="12"
-                      class="text-white"
+                <input
+                  v-model.number="form.maxCapacity"
+                  type="number"
+                  min="0"
+                  class="w-full px-3 py-2.5 bg-slate-50 rounded-xl text-sm outline-none border border-transparent focus:ring-2 focus:ring-blue-200"
+                />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-500 mb-1"
+                  >Tashkil etilgan yil</label
+                >
+                <input
+                  v-model.number="form.established"
+                  type="number"
+                  min="1900"
+                  max="2100"
+                  class="w-full px-3 py-2.5 bg-slate-50 rounded-xl text-sm outline-none border border-transparent focus:ring-2 focus:ring-blue-200"
+                />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-500 mb-1"
+                  >Telegram</label
+                >
+                <input
+                  v-model="form.telegram"
+                  placeholder="@username"
+                  class="w-full px-3 py-2.5 bg-slate-50 rounded-xl text-sm outline-none border border-transparent focus:ring-2 focus:ring-blue-200"
+                />
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-500 mb-1"
+                  >Instagram</label
+                >
+                <input
+                  v-model="form.instagram"
+                  placeholder="@username"
+                  class="w-full px-3 py-2.5 bg-slate-50 rounded-xl text-sm outline-none border border-transparent focus:ring-2 focus:ring-blue-200"
+                />
+              </div>
+              <div class="sm:col-span-2 flex flex-wrap items-center gap-3 pt-2">
+                <label
+                  class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl border cursor-pointer transition-all select-none"
+                  :class="
+                    form.isNew
+                      ? 'border-blue-300 bg-blue-50 shadow-sm shadow-blue-100'
+                      : 'border-slate-100 hover:border-slate-200'
+                  "
+                >
+                  <div class="relative shrink-0">
+                    <input
+                      type="checkbox"
+                      v-model="form.isNew"
+                      class="sr-only"
                     />
+                    <div
+                      class="w-[18px] h-[18px] rounded-md border-2 flex items-center justify-center transition-all"
+                      :class="
+                        form.isNew
+                          ? 'bg-blue-600 border-blue-600'
+                          : 'border-slate-300'
+                      "
+                    >
+                      <Check v-if="form.isNew" :size="12" class="text-white" />
+                    </div>
                   </div>
-                </div>
-                <span
-                  class="text-sm font-medium"
-                  :class="form.isVerified ? 'text-green-700' : 'text-slate-600'"
-                  >Tasdiqlangan</span
-                >
-              </label>
-              <label
-                class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl border cursor-pointer transition-all select-none"
-                :class="
-                  form.isFeatured
-                    ? 'border-amber-300 bg-amber-50 shadow-sm shadow-amber-100'
-                    : 'border-slate-100 hover:border-slate-200'
-                "
-              >
-                <div class="relative shrink-0">
-                  <input
-                    type="checkbox"
-                    v-model="form.isFeatured"
-                    class="sr-only"
-                  />
-                  <div
-                    class="w-[18px] h-[18px] rounded-md border-2 flex items-center justify-center transition-all"
-                    :class="
-                      form.isFeatured
-                        ? 'bg-amber-600 border-amber-600'
-                        : 'border-slate-300'
-                    "
+                  <span
+                    class="text-sm font-medium"
+                    :class="form.isNew ? 'text-blue-700' : 'text-slate-600'"
+                    >Yangi</span
                   >
-                    <Check
-                      v-if="form.isFeatured"
-                      :size="12"
-                      class="text-white"
-                    />
-                  </div>
-                </div>
-                <span
-                  class="text-sm font-medium"
-                  :class="form.isFeatured ? 'text-amber-700' : 'text-slate-600'"
-                  >Featured</span
+                </label>
+                <label
+                  class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl border cursor-pointer transition-all select-none"
+                  :class="
+                    form.isVerified
+                      ? 'border-green-300 bg-green-50 shadow-sm shadow-green-100'
+                      : 'border-slate-100 hover:border-slate-200'
+                  "
                 >
-              </label>
+                  <div class="relative shrink-0">
+                    <input
+                      type="checkbox"
+                      v-model="form.isVerified"
+                      class="sr-only"
+                    />
+                    <div
+                      class="w-[18px] h-[18px] rounded-md border-2 flex items-center justify-center transition-all"
+                      :class="
+                        form.isVerified
+                          ? 'bg-green-600 border-green-600'
+                          : 'border-slate-300'
+                      "
+                    >
+                      <Check
+                        v-if="form.isVerified"
+                        :size="12"
+                        class="text-white"
+                      />
+                    </div>
+                  </div>
+                  <span
+                    class="text-sm font-medium"
+                    :class="
+                      form.isVerified ? 'text-green-700' : 'text-slate-600'
+                    "
+                    >Tasdiqlangan</span
+                  >
+                </label>
+                <label
+                  class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl border cursor-pointer transition-all select-none"
+                  :class="
+                    form.isFeatured
+                      ? 'border-amber-300 bg-amber-50 shadow-sm shadow-amber-100'
+                      : 'border-slate-100 hover:border-slate-200'
+                  "
+                >
+                  <div class="relative shrink-0">
+                    <input
+                      type="checkbox"
+                      v-model="form.isFeatured"
+                      class="sr-only"
+                    />
+                    <div
+                      class="w-[18px] h-[18px] rounded-md border-2 flex items-center justify-center transition-all"
+                      :class="
+                        form.isFeatured
+                          ? 'bg-amber-600 border-amber-600'
+                          : 'border-slate-300'
+                      "
+                    >
+                      <Check
+                        v-if="form.isFeatured"
+                        :size="12"
+                        class="text-white"
+                      />
+                    </div>
+                  </div>
+                  <span
+                    class="text-sm font-medium"
+                    :class="
+                      form.isFeatured ? 'text-amber-700' : 'text-slate-600'
+                    "
+                    >Featured</span
+                  >
+                </label>
+              </div>
             </div>
           </div>
 
@@ -758,6 +852,15 @@ import {
 } from "lucide-vue-next";
 
 const searchStore = useSearchStore();
+const weekDays = [
+  { key: "mon", label: "Du" },
+  { key: "tue", label: "Se" },
+  { key: "wed", label: "Ch" },
+  { key: "thu", label: "Pa" },
+  { key: "fri", label: "Ju" },
+  { key: "sat", label: "Sh" },
+  { key: "sun", label: "Ya" },
+];
 const defaultForm = () => ({
   name: "",
   type: "",
@@ -771,12 +874,18 @@ const defaultForm = () => ({
   phone: "",
   weekdayHours: "",
   weekendHours: "",
+  openDays: ["mon", "tue", "wed", "thu", "fri"],
+  noWeekends: false,
   services: [],
   amenities: [],
   images: [],
   isNew: true,
   isVerified: false,
   isFeatured: false,
+  maxCapacity: null,
+  established: new Date().getFullYear(),
+  telegram: "",
+  instagram: "",
 });
 const form = ref(defaultForm());
 
@@ -1075,12 +1184,20 @@ function openEditModal(facility) {
     phone: facility.phone || "",
     weekdayHours: facility.weekdayHours || facility.openingHours || "",
     weekendHours: facility.weekendHours || "",
+    openDays: Array.isArray(facility.openDays)
+      ? [...facility.openDays]
+      : ["mon", "tue", "wed", "thu", "fri"],
+    noWeekends: !!facility.noWeekends,
     services: [...(facility.services || [])],
     amenities: [...(facility.amenities || [])],
     images: [...(facility.images || [])],
     isNew: facility.isNew || false,
     isVerified: facility.isVerified || false,
     isFeatured: facility.isFeatured || false,
+    maxCapacity: facility.maxCapacity ?? null,
+    established: facility.established ?? new Date().getFullYear(),
+    telegram: facility.telegram || (facility.socialMedia?.telegram ?? ""),
+    instagram: facility.instagram || (facility.socialMedia?.instagram ?? ""),
   };
   nextTick(() => {
     isPopulatingForm.value = false;
@@ -1089,6 +1206,16 @@ function openEditModal(facility) {
 }
 
 function handleSave() {
+  const sanitizedTelegram = (form.value.telegram || "")
+    .replace(/^@/, "")
+    .trim();
+  const sanitizedInstagram = (form.value.instagram || "")
+    .replace(/^@/, "")
+    .trim();
+  const openDays = Array.isArray(form.value.openDays)
+    ? [...form.value.openDays]
+    : ["mon", "tue", "wed", "thu", "fri"];
+
   const data = {
     name: form.value.name,
     type: form.value.type,
@@ -1116,13 +1243,19 @@ function handleSave() {
     isFeatured: form.value.isFeatured,
     area: 0,
     trainerCount: 0,
-    established: new Date().getFullYear(),
+    established: form.value.established || new Date().getFullYear(),
     tags: [form.value.type],
-    maxCapacity: 0,
+    maxCapacity: form.value.maxCapacity || 0,
     languages: ["uz", "ru"],
-    socialMedia: { instagram: "", telegram: "" },
+    socialMedia: { instagram: sanitizedInstagram, telegram: sanitizedTelegram },
+    telegram: sanitizedTelegram,
+    instagram: sanitizedInstagram,
+    openDays,
+    noWeekends: !!form.value.noWeekends,
     weekdayHours: form.value.weekdayHours || "06:00 - 23:00",
-    weekendHours: form.value.weekendHours || "08:00 - 22:00",
+    weekendHours: form.value.noWeekends
+      ? ""
+      : form.value.weekendHours || "08:00 - 22:00",
     features: [],
   };
 
@@ -1155,6 +1288,17 @@ watch(
     ) {
       form.value.district = "";
     }
+  },
+);
+
+watch(
+  () => form.value.noWeekends,
+  (val) => {
+    if (!val) return;
+    form.value.weekendHours = "";
+    form.value.openDays = (form.value.openDays || []).filter(
+      (d) => d !== "sat" && d !== "sun",
+    );
   },
 );
 </script>
