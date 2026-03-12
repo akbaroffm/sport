@@ -387,7 +387,7 @@
         <!-- Nearest facilities -->
         <section v-if="nearestFacilities.length" class="mt-1 max-w-7xl mx-auto">
           <div
-            class="flex items-center justify-between px-4 sm:px-6 lg:px-8 mb-2.5"
+            class="flex items-center justify-between px-4 sm:px-6 lg:px-8 mb-2"
           >
             <h2
               class="text-base font-bold text-slate-900 flex items-center gap-1.5"
@@ -400,7 +400,7 @@
               <div
                 v-for="f in nearestFacilities"
                 :key="f.id"
-                class="w-40 sm:w-48 lg:w-56 shrink-0"
+                class="w-46 lg:w-56 shrink-0"
               >
                 <FacilityCard :facility="f" :compact="true" />
               </div>
@@ -411,7 +411,7 @@
         <!-- New facilities -->
         <section v-if="newFacilities.length" class="mt-4 max-w-7xl mx-auto">
           <div
-            class="flex items-center justify-between px-4 sm:px-6 lg:px-8 mb-2.5"
+            class="flex items-center justify-between px-4 sm:px-6 lg:px-8 mb-2"
           >
             <h2
               class="text-base font-bold text-slate-900 flex items-center gap-1.5"
@@ -439,7 +439,7 @@
         <!-- Top rated -->
         <section class="mt-6 max-w-7xl mx-auto">
           <div
-            class="flex items-center justify-between px-4 sm:px-6 lg:px-8 mb-2.5"
+            class="flex items-center justify-between px-4 sm:px-6 lg:px-8 mb-2"
           >
             <h2
               class="text-base font-bold text-slate-900 flex items-center gap-1.5"
@@ -463,7 +463,7 @@
         <!-- Popular -->
         <section class="mt-6 max-w-7xl mx-auto">
           <div
-            class="flex items-center justify-between px-4 sm:px-6 lg:px-8 mb-2.5"
+            class="flex items-center justify-between px-4 sm:px-6 lg:px-8 mb-2"
           >
             <h2
               class="text-base font-bold text-slate-900 flex items-center gap-1.5"
@@ -491,7 +491,7 @@
         <!-- Affordable -->
         <section class="mt-6 mb-4 max-w-7xl mx-auto">
           <div
-            class="flex items-center justify-between px-4 sm:px-6 lg:px-8 mb-2.5"
+            class="flex items-center justify-between px-4 sm:px-6 lg:px-8 mb-2"
           >
             <h2
               class="text-base font-bold text-slate-900 flex items-center gap-1.5"
