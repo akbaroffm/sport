@@ -82,12 +82,7 @@
                 <span class="text-[11px] text-slate-400"
                   >({{ selectedFacility.reviewCount }})</span
                 >
-                <span
-                  v-if="selectedFacility.isVerified"
-                  class="inline-flex items-center gap-0.5 text-[10px] font-bold text-emerald-600"
-                >
-                  <BadgeCheck :size="11" /> Tasdiqlangan
-                </span>
+
               </div>
 
               <!-- Price + action -->
@@ -121,7 +116,7 @@ import {
   X,
   MapPin,
   Star,
-  BadgeCheck,
+
   ChevronRight,
 } from "lucide-vue-next";
 

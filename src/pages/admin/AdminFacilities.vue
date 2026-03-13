@@ -387,6 +387,49 @@
               Narx va ish vaqti
             </h4>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="sm:col-span-2">
+              <label class="block text-xs font-semibold text-slate-500 mb-1"
+                >Kimlar uchun</label
+              >
+              <div class="flex flex-wrap gap-2">
+                <button
+                  type="button"
+                  class="px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors"
+                  :class="
+                    form.audience === 'both'
+                      ? 'bg-slate-900 text-white border-slate-900'
+                      : 'bg-white text-slate-600 border-slate-200'
+                  "
+                  @click="form.audience = 'both'"
+                >
+                  Erkaklar va ayollar
+                </button>
+                <button
+                  type="button"
+                  class="px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors"
+                  :class="
+                    form.audience === 'male'
+                      ? 'bg-blue-600 text-white border-blue-600'
+                      : 'bg-white text-slate-600 border-slate-200'
+                  "
+                  @click="form.audience = 'male'"
+                >
+                  Faqat erkaklar
+                </button>
+                <button
+                  type="button"
+                  class="px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors"
+                  :class="
+                    form.audience === 'female'
+                      ? 'bg-pink-600 text-white border-pink-600'
+                      : 'bg-white text-slate-600 border-slate-200'
+                  "
+                  @click="form.audience = 'female'"
+                >
+                  Faqat ayollar
+                </button>
+              </div>
+            </div>
               <div>
                 <label class="block text-xs font-semibold text-slate-500 mb-1"
                   >Oylik narx (so'm)</label
@@ -422,66 +465,45 @@
                 />
               </div>
               <div class="sm:col-span-2">
-                <label class="block text-xs font-semibold text-slate-500 mb-1"
-                  >Hafta kunlari *</label
+                <label class="block text-xs font-semibold text-slate-500 mb-2"
+                  >Dam olish kunlari</label
                 >
-                <div class="flex flex-wrap gap-2 mb-2">
-                  <label
-                    v-for="(day, idx) in weekDays"
+                <div class="flex flex-wrap gap-2">
+                  <button
+                    v-for="day in weekDays"
                     :key="day.key"
-                    class="flex items-center gap-1.5 px-2 py-1.5 rounded-lg border cursor-pointer text-xs font-medium select-none"
+                    type="button"
+                    @click="toggleRestDay(day.key)"
+                    class="px-4 py-2 rounded-xl text-xs font-bold border transition-all"
                     :class="
-                      form.openDays?.includes(day.key)
-                        ? 'bg-blue-50 border-blue-300 text-blue-700'
-                        : 'bg-white border-slate-200 text-slate-500'
+                      form.restDays.includes(day.key)
+                        ? 'bg-amber-500 text-white border-amber-500 shadow-sm'
+                        : 'bg-white text-slate-500 border-slate-200 hover:border-blue-300'
                     "
                   >
-                    <input
-                      type="checkbox"
-                      class="sr-only"
-                      :value="day.key"
-                      v-model="form.openDays"
-                    />
-                    <span>{{ day.label }}</span>
-                  </label>
-                  <label
-                    class="flex items-center gap-1.5 px-2 py-1.5 rounded-lg border cursor-pointer text-xs font-medium select-none"
-                    :class="
-                      form.noWeekends
-                        ? 'bg-amber-50 border-amber-300 text-amber-700'
-                        : 'bg-white border-slate-200 text-slate-500'
-                    "
+                    {{ day.label }}
+                  </button>
+                  <button
+                    type="button"
+                    @click="form.restDays = []"
+                    class="px-4 py-2 rounded-xl text-xs font-bold border border-dashed border-blue-300 text-blue-600 hover:bg-blue-50 transition-colors"
                   >
-                    <input
-                      type="checkbox"
-                      class="sr-only"
-                      v-model="form.noWeekends"
-                    />
-                    <span>Dam olish kunlarisiz</span>
-                  </label>
+                    Dam olishsiz (Har kuni)
+                  </button>
                 </div>
               </div>
-              <div>
+              <div class="sm:col-span-2">
                 <label class="block text-xs font-semibold text-slate-500 mb-1"
-                  >Ish kunlari vaqti</label
+                  >Ish vaqti *</label
                 >
                 <input
                   v-model="form.weekdayHours"
-                  placeholder="06:00 - 23:00"
+                  required
+                  placeholder="08:00 - 22:00"
                   class="w-full px-3 py-2.5 bg-slate-50 rounded-xl text-sm outline-none focus:ring-2 focus:ring-blue-500/30 border border-transparent focus:border-blue-200"
                 />
               </div>
-              <div>
-                <label class="block text-xs font-semibold text-slate-500 mb-1"
-                  >Dam olish kunlari vaqti</label
-                >
-                <input
-                  v-model="form.weekendHours"
-                  :disabled="form.noWeekends"
-                  placeholder="08:00 - 22:00"
-                  class="w-full px-3 py-2.5 bg-slate-50 rounded-xl text-sm outline-none focus:ring-2 focus:ring-blue-500/30 border border-transparent focus:border-blue-200 disabled:opacity-50"
-                />
-              </div>
+
             </div>
           </div>
 
@@ -656,32 +678,9 @@
                 class="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-xs font-bold"
                 >7</span
               >
-              Qo'shimcha
+              Ijtimoiy tarmoqlar
             </h4>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div>
-                <label class="block text-xs font-semibold text-slate-500 mb-1"
-                  >Sig'im (maksimal odam)</label
-                >
-                <input
-                  v-model.number="form.maxCapacity"
-                  type="number"
-                  min="0"
-                  class="w-full px-3 py-2.5 bg-slate-50 rounded-xl text-sm outline-none border border-transparent focus:ring-2 focus:ring-blue-200"
-                />
-              </div>
-              <div>
-                <label class="block text-xs font-semibold text-slate-500 mb-1"
-                  >Tashkil etilgan yil</label
-                >
-                <input
-                  v-model.number="form.established"
-                  type="number"
-                  min="1900"
-                  max="2100"
-                  class="w-full px-3 py-2.5 bg-slate-50 rounded-xl text-sm outline-none border border-transparent focus:ring-2 focus:ring-blue-200"
-                />
-              </div>
               <div>
                 <label class="block text-xs font-semibold text-slate-500 mb-1"
                   >Telegram</label
@@ -734,43 +733,7 @@
                     >Yangi</span
                   >
                 </label>
-                <label
-                  class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl border cursor-pointer transition-all select-none"
-                  :class="
-                    form.isVerified
-                      ? 'border-green-300 bg-green-50 shadow-sm shadow-green-100'
-                      : 'border-slate-100 hover:border-slate-200'
-                  "
-                >
-                  <div class="relative shrink-0">
-                    <input
-                      type="checkbox"
-                      v-model="form.isVerified"
-                      class="sr-only"
-                    />
-                    <div
-                      class="w-[18px] h-[18px] rounded-md border-2 flex items-center justify-center transition-all"
-                      :class="
-                        form.isVerified
-                          ? 'bg-green-600 border-green-600'
-                          : 'border-slate-300'
-                      "
-                    >
-                      <Check
-                        v-if="form.isVerified"
-                        :size="12"
-                        class="text-white"
-                      />
-                    </div>
-                  </div>
-                  <span
-                    class="text-sm font-medium"
-                    :class="
-                      form.isVerified ? 'text-green-700' : 'text-slate-600'
-                    "
-                    >Tasdiqlangan</span
-                  >
-                </label>
+
                 <label
                   class="flex items-center gap-2.5 px-3.5 py-2.5 rounded-xl border cursor-pointer transition-all select-none"
                   :class="
@@ -865,6 +828,7 @@ const defaultForm = () => ({
   name: "",
   type: "",
   description: "",
+  audience: "both",
   region: "",
   district: "",
   address: "",
@@ -873,17 +837,13 @@ const defaultForm = () => ({
   monthlyPrice: null,
   phone: "",
   weekdayHours: "",
-  weekendHours: "",
-  openDays: ["mon", "tue", "wed", "thu", "fri"],
-  noWeekends: false,
+  restDays: [], // 'mon', 'tue', etc.
   services: [],
   amenities: [],
   images: [],
   isNew: true,
-  isVerified: false,
+
   isFeatured: false,
-  maxCapacity: null,
-  established: new Date().getFullYear(),
   telegram: "",
   instagram: "",
 });
@@ -979,6 +939,14 @@ const currentServices = computed(() =>
 const currentAmenities = computed(() =>
   form.value.type ? amenitiesByType[form.value.type] || [] : [],
 );
+
+function toggleRestDay(key) {
+  if (form.value.restDays.includes(key)) {
+    form.value.restDays = form.value.restDays.filter((d) => d !== key);
+  } else {
+    form.value.restDays.push(key);
+  }
+}
 
 watch(
   () => form.value.type,
@@ -1175,6 +1143,7 @@ function openEditModal(facility) {
     name: facility.name,
     type: facility.type,
     description: facility.description || "",
+    audience: facility.audience || "both",
     region,
     district: facility.city || "",
     address: facility.address || "",
@@ -1183,19 +1152,17 @@ function openEditModal(facility) {
     monthlyPrice: facility.monthlyPrice,
     phone: facility.phone || "",
     weekdayHours: facility.weekdayHours || facility.openingHours || "",
-    weekendHours: facility.weekendHours || "",
-    openDays: Array.isArray(facility.openDays)
-      ? [...facility.openDays]
-      : ["mon", "tue", "wed", "thu", "fri"],
-    noWeekends: !!facility.noWeekends,
+    restDays: (() => {
+      const allDays = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+      const openDays = Array.isArray(facility.openDays) ? facility.openDays : [];
+      return allDays.filter((d) => !openDays.includes(d));
+    })(),
     services: [...(facility.services || [])],
     amenities: [...(facility.amenities || [])],
     images: [...(facility.images || [])],
     isNew: facility.isNew || false,
-    isVerified: facility.isVerified || false,
+
     isFeatured: facility.isFeatured || false,
-    maxCapacity: facility.maxCapacity ?? null,
-    established: facility.established ?? new Date().getFullYear(),
     telegram: facility.telegram || (facility.socialMedia?.telegram ?? ""),
     instagram: facility.instagram || (facility.socialMedia?.instagram ?? ""),
   };
@@ -1212,9 +1179,9 @@ function handleSave() {
   const sanitizedInstagram = (form.value.instagram || "")
     .replace(/^@/, "")
     .trim();
-  const openDays = Array.isArray(form.value.openDays)
-    ? [...form.value.openDays]
-    : ["mon", "tue", "wed", "thu", "fri"];
+  const allWeekDays = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+  const openDays = allWeekDays.filter(d => !form.value.restDays.includes(d));
+  const noWeekends = openDays.length === 7;
 
   const data = {
     name: form.value.name,
@@ -1239,23 +1206,16 @@ function handleSave() {
       ? form.value.images
       : ["https://placehold.co/600x400?text=Sport"],
     isNew: form.value.isNew,
-    isVerified: form.value.isVerified,
+
     isFeatured: form.value.isFeatured,
-    area: 0,
-    trainerCount: 0,
-    established: form.value.established || new Date().getFullYear(),
     tags: [form.value.type],
-    maxCapacity: form.value.maxCapacity || 0,
     languages: ["uz", "ru"],
-    socialMedia: { instagram: sanitizedInstagram, telegram: sanitizedTelegram },
-    telegram: sanitizedTelegram,
     instagram: sanitizedInstagram,
     openDays,
-    noWeekends: !!form.value.noWeekends,
+    noWeekends,
+    openingHours: form.value.weekdayHours || "06:00 - 23:00",
     weekdayHours: form.value.weekdayHours || "06:00 - 23:00",
-    weekendHours: form.value.noWeekends
-      ? ""
-      : form.value.weekendHours || "08:00 - 22:00",
+    weekendHours: "",
     features: [],
   };
 
@@ -1291,16 +1251,7 @@ watch(
   },
 );
 
-watch(
-  () => form.value.noWeekends,
-  (val) => {
-    if (!val) return;
-    form.value.weekendHours = "";
-    form.value.openDays = (form.value.openDays || []).filter(
-      (d) => d !== "sat" && d !== "sun",
-    );
-  },
-);
+
 </script>
 
 <style scoped>

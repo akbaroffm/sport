@@ -3,6 +3,7 @@
     "id": "bd-001",
     "name": "Shuttle Pro Badminton",
     "type": "badminton",
+    "audience": "both",
     "description": "Dedicated badminton hall with 6 courts, professional lighting, and competitive leagues.",
     "address": "Mirabad str. 18",
     "city": "Tashkent",
@@ -14,8 +15,18 @@
     "monthlyPrice": 300000,
     "openingHours": "07:00–22:00",
     "phone": "+998 71 243 5566",
-    "services": ["Court Rental", "Coaching", "Tournaments", "Equipment Rental"],
-    "amenities": ["6 Courts", "Pro Lighting", "Showers", "Pro Shop"],
+    "services": [
+      "Court Rental",
+      "Coaching",
+      "Tournaments",
+      "Equipment Rental"
+    ],
+    "amenities": [
+      "6 Courts",
+      "Pro Lighting",
+      "Showers",
+      "Pro Shop"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800"
     ],
@@ -23,26 +34,42 @@
       "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800"
     ],
     "isNew": true,
-    "isVerified": true,
     "isFeatured": true,
-    "area": 600,
-    "trainerCount": 4,
-    "established": 2019,
-    "tags": ["Badminton", "Tezkorlik"],
-    "maxCapacity": 60,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Badminton",
+      "Tezkorlik"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@shuttleprobadminton",
       "telegram": "@bd-001"
     },
     "weekdayHours": "07:00–22:00",
     "weekendHours": "07:00–22:00",
-    "features": ["Court Rental", "Coaching", "6 Courts", "Pro Lighting"]
+    "features": [
+      "Court Rental",
+      "Coaching",
+      "6 Courts",
+      "Pro Lighting"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat"
+    ],
+    "noWeekends": false
   },
   {
     "id": "bd-002",
     "name": "Smash Zone",
     "type": "badminton",
+    "audience": "both",
     "description": "Modern badminton center with sprung flooring and drop-in sessions for all levels.",
     "address": "Chilanzar str. 6",
     "city": "Tashkent",
@@ -54,8 +81,16 @@
     "monthlyPrice": 220000,
     "openingHours": "08:00–22:00",
     "phone": "+998 71 247 7788",
-    "services": ["Drop-in Play", "Coaching", "League Play"],
-    "amenities": ["Sprung Floor", "Showers", "Parking"],
+    "services": [
+      "Drop-in Play",
+      "Coaching",
+      "League Play"
+    ],
+    "amenities": [
+      "Sprung Floor",
+      "Showers",
+      "Parking"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800"
     ],
@@ -63,26 +98,43 @@
       "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800"
     ],
     "isNew": true,
-    "isVerified": false,
     "isFeatured": false,
-    "area": 500,
-    "trainerCount": 3,
-    "established": 2020,
-    "tags": ["Badminton", "Tezkorlik"],
-    "maxCapacity": 50,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Badminton",
+      "Tezkorlik"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@smashzone",
       "telegram": "@bd-002"
     },
     "weekdayHours": "08:00–22:00",
     "weekendHours": "08:00–22:00",
-    "features": ["Drop-in Play", "Coaching", "Sprung Floor", "Showers"]
+    "features": [
+      "Drop-in Play",
+      "Coaching",
+      "Sprung Floor",
+      "Showers"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "noWeekends": false
   },
   {
     "id": "bd-003",
     "name": "Feather Court Samarkand",
     "type": "badminton",
+    "audience": "both",
     "description": "Community badminton facility with 4 courts and beginner-friendly coaching programs.",
     "address": "Tashkent str. 40",
     "city": "Samarkand",
@@ -94,8 +146,15 @@
     "monthlyPrice": 150000,
     "openingHours": "07:00–21:00",
     "phone": "+998 66 238 1122",
-    "services": ["Court Rental", "Beginner Coaching", "Social Play"],
-    "amenities": ["4 Courts", "Changing Rooms"],
+    "services": [
+      "Court Rental",
+      "Beginner Coaching",
+      "Social Play"
+    ],
+    "amenities": [
+      "4 Courts",
+      "Changing Rooms"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800"
     ],
@@ -103,14 +162,15 @@
       "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800"
     ],
     "isNew": false,
-    "isVerified": true,
     "isFeatured": false,
-    "area": 400,
-    "trainerCount": 2,
-    "established": 2021,
-    "tags": ["Badminton", "Tezkorlik"],
-    "maxCapacity": 40,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Badminton",
+      "Tezkorlik"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@feathercourtsamarkand",
       "telegram": "@bd-003"
@@ -122,12 +182,23 @@
       "Beginner Coaching",
       "4 Courts",
       "Changing Rooms"
-    ]
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "noWeekends": false
   },
   {
     "id": "bd-004",
     "name": "Birdie Club Tashkent",
     "type": "badminton",
+    "audience": "both",
     "description": "Premium badminton club with coaching from former national team players.",
     "address": "Katta Darhon str. 25",
     "city": "Tashkent",
@@ -145,7 +216,13 @@
       "Tournaments",
       "Racket Stringing"
     ],
-    "amenities": ["8 Courts", "Pro Shop", "Sauna", "Showers", "Cafe"],
+    "amenities": [
+      "8 Courts",
+      "Pro Shop",
+      "Sauna",
+      "Showers",
+      "Cafe"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800"
     ],
@@ -153,26 +230,44 @@
       "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800"
     ],
     "isNew": false,
-    "isVerified": false,
     "isFeatured": false,
-    "area": 800,
-    "trainerCount": 6,
-    "established": 2018,
-    "tags": ["Badminton", "Tezkorlik"],
-    "maxCapacity": 80,
-    "languages": ["O'zbekcha", "Ruscha", "English"],
+    "tags": [
+      "Badminton",
+      "Tezkorlik"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha",
+      "English"
+    ],
     "socialMedia": {
       "instagram": "@birdieclubtashkent",
       "telegram": "@bd-004"
     },
     "weekdayHours": "06:00–23:00",
     "weekendHours": "06:00–23:00",
-    "features": ["Elite Coaching", "Video Analysis", "8 Courts", "Pro Shop"]
+    "features": [
+      "Elite Coaching",
+      "Video Analysis",
+      "8 Courts",
+      "Pro Shop"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "noWeekends": false
   },
   {
     "id": "bd-005",
     "name": "Net Play Namangan",
     "type": "badminton",
+    "audience": "both",
     "description": "Affordable badminton courts with family-friendly weekend sessions.",
     "address": "Chorsu str. 9",
     "city": "Namangan",
@@ -184,8 +279,15 @@
     "monthlyPrice": 120000,
     "openingHours": "08:00–20:00",
     "phone": "+998 69 236 5566",
-    "services": ["Court Rental", "Family Sessions"],
-    "amenities": ["3 Courts", "Changing Rooms", "Parking"],
+    "services": [
+      "Court Rental",
+      "Family Sessions"
+    ],
+    "amenities": [
+      "3 Courts",
+      "Changing Rooms",
+      "Parking"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800"
     ],
@@ -193,14 +295,15 @@
       "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800"
     ],
     "isNew": false,
-    "isVerified": true,
     "isFeatured": false,
-    "area": 300,
-    "trainerCount": 2,
-    "established": 2022,
-    "tags": ["Badminton", "Tezkorlik"],
-    "maxCapacity": 30,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Badminton",
+      "Tezkorlik"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@netplaynamangan",
       "telegram": "@bd-005"
@@ -212,12 +315,22 @@
       "Family Sessions",
       "3 Courts",
       "Changing Rooms"
-    ]
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat"
+    ],
+    "noWeekends": false
   },
   {
     "id": "bd-006",
     "name": "Rally Badminton Hub",
     "type": "badminton",
+    "audience": "both",
     "description": "Multi-purpose sports hall with dedicated badminton courts and weekly competitive matches.",
     "address": "Muqimiy str. 33",
     "city": "Bukhara",
@@ -229,8 +342,16 @@
     "monthlyPrice": 170000,
     "openingHours": "07:00–21:00",
     "phone": "+998 65 225 7788",
-    "services": ["Court Rental", "Weekly Matches", "Coaching"],
-    "amenities": ["4 Courts", "Showers", "Parking"],
+    "services": [
+      "Court Rental",
+      "Weekly Matches",
+      "Coaching"
+    ],
+    "amenities": [
+      "4 Courts",
+      "Showers",
+      "Parking"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800"
     ],
@@ -238,20 +359,34 @@
       "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=800"
     ],
     "isNew": false,
-    "isVerified": false,
     "isFeatured": false,
-    "area": 450,
-    "trainerCount": 3,
-    "established": 2021,
-    "tags": ["Badminton", "Tezkorlik"],
-    "maxCapacity": 45,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Badminton",
+      "Tezkorlik"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@rallybadmintonhub",
       "telegram": "@bd-006"
     },
     "weekdayHours": "07:00–21:00",
     "weekendHours": "07:00–21:00",
-    "features": ["Court Rental", "Weekly Matches", "4 Courts", "Showers"]
+    "features": [
+      "Court Rental",
+      "Weekly Matches",
+      "4 Courts",
+      "Showers"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri"
+    ],
+    "noWeekends": true
   }
 ]

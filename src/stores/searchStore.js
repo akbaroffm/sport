@@ -1,4 +1,4 @@
-﻿import { defineStore } from "pinia";
+import { defineStore } from "pinia";
 import { ref, computed } from "vue";
 
 import gyms from "../data/gyms.json";
@@ -75,6 +75,7 @@ export const useSearchStore = defineStore("search", () => {
   const priceFilter = ref("all");
   const ratingFilter = ref(0);
   const cityFilter = ref("all");
+  const genderFilter = ref("all"); // 'all' | 'male' | 'female'
   const sortBy = ref("rating");
   const viewAllSection = ref(null); // 'new' | 'top' | 'popular' | 'affordable' | null
 
@@ -197,6 +198,12 @@ export const useSearchStore = defineStore("search", () => {
       results = results.filter((f) => f.city === cityFilter.value);
     }
 
+    if (genderFilter.value === "male") {
+      results = results.filter((f) => f.audience === "male");
+    } else if (genderFilter.value === "female") {
+      results = results.filter((f) => f.audience === "female");
+    }
+
     if (sortBy.value === "rating") {
       results.sort((a, b) => b.rating - a.rating);
     } else if (sortBy.value === "price-low") {
@@ -294,7 +301,7 @@ export const useSearchStore = defineStore("search", () => {
         (f.rating / 5) * 40 +
         (Math.min(f.reviewCount, 200) / 200) * 20 +
         (1 - Math.min(f.monthlyPrice, 1000000) / 1000000) * 25 +
-        (f.isVerified ? 10 : 0) +
+
         (f.amenities?.length || 0) * 0.5;
 
       if (score > bestScore) {
@@ -315,9 +322,7 @@ export const useSearchStore = defineStore("search", () => {
     if (best.reviewCount >= Math.max(...others.map((o) => o.reviewCount))) {
       reasons.push(`Eng ko'p sharhlar: ${best.reviewCount}`);
     }
-    if (best.isVerified) {
-      reasons.push("Tasdiqlangan joy");
-    }
+
     if (
       (best.amenities?.length || 0) >
       Math.max(...others.map((o) => o.amenities?.length || 0))
@@ -351,6 +356,7 @@ export const useSearchStore = defineStore("search", () => {
     priceFilter.value = "all";
     ratingFilter.value = 0;
     cityFilter.value = "all";
+    genderFilter.value = "all";
     sortBy.value = "rating";
     viewAllSection.value = null;
   }
@@ -476,6 +482,7 @@ export const useSearchStore = defineStore("search", () => {
     priceFilter,
     ratingFilter,
     cityFilter,
+    genderFilter,
     sortBy,
     viewAllSection,
     userCity,

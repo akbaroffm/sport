@@ -49,27 +49,32 @@
               >{{ typeLabel }}</span
             >
             <span
-              v-if="facility.isVerified"
-              class="flex items-center gap-1 px-2 py-1 bg-emerald-50 text-emerald-600 rounded-lg text-[11px] font-bold"
+              v-if="facility.audience === 'male' || facility.audience === 'female'"
+              class="flex items-center gap-1 px-2 py-1 rounded-lg text-[11px] font-bold"
+              :class="
+                facility.audience === 'male'
+                  ? 'bg-blue-50 text-blue-700'
+                  : 'bg-pink-50 text-pink-700'
+              "
             >
-              <BadgeCheck :size="12" /> Tasdiqlangan
+              <component
+                :is="facility.audience === 'male' ? Mars : Venus"
+                :size="12"
+              />
+              <span>
+                {{
+                  facility.audience === "male"
+                    ? "Faqat erkaklar uchun"
+                    : "Faqat ayollar uchun"
+                }}
+              </span>
             </span>
+
             <span
               v-if="facility.isNew"
               class="px-2 py-1 bg-orange-50 text-orange-600 rounded-lg text-[11px] font-bold"
               >Yangi</span
             >
-            <span
-              :class="[
-                'flex items-center gap-1 px-2 py-1 rounded-lg text-[11px] font-bold',
-                isOpenNow
-                  ? 'bg-green-50 text-green-600'
-                  : 'bg-red-50 text-red-500',
-              ]"
-            >
-              <CircleDot :size="12" />
-              {{ isOpenNow ? "Ochiq" : "Yopiq" }}
-            </span>
           </div>
 
           <!-- Title -->
@@ -96,6 +101,49 @@
           <div class="flex items-center gap-1.5 mt-2.5 text-sm text-slate-500">
             <MapPin :size="14" class="text-blue-500 shrink-0" />
             <span>{{ facility.city }}, {{ facility.address }}</span>
+          </div>
+
+          <!-- Working Hours & Rest Days (Styled like other cards) -->
+        </div>
+
+        <!-- Description -->
+        <div class="px-4 sm:px-6 lg:px-8 pt-2">
+          <p class="text-sm text-slate-600 leading-relaxed">
+            {{ facility.description }}
+          </p>
+        </div>
+
+        <!-- Working Hours & Rest Days Card -->
+        <div class="px-4 sm:px-6 lg:px-8 pt-4">
+          <!-- <h2 class="text-[15px] font-bold text-slate-900 mb-2.5 flex items-center gap-2">
+            <Clock :size="16" class="text-blue-500" /> Ish vaqti va Dam olish
+          </h2> -->
+          <div class="grid grid-cols-2 gap-2">
+            <div class="flex items-center gap-2.5 bg-slate-50 rounded-xl px-3 py-2.5">
+              <Clock :size="16" class="text-blue-600 shrink-0" />
+              <div class="flex flex-col">
+                <span class="text-[11px] text-slate-400 font-medium leading-none mb-1">Ish vaqti</span>
+                <div class="flex items-center gap-2">
+                  <span class="text-[13px] text-slate-700 font-bold leading-none">{{ facility.weekdayHours || facility.openingHours }}</span>
+                  <!-- <span 
+                    class="text-[9px] font-bold px-1.5 py-0.5 rounded-md uppercase tracking-wide leading-none"
+                    :class="isOpenNow ? 'bg-emerald-100/50 text-emerald-600' : 'bg-rose-100/50 text-rose-600'"
+                  >
+                    {{ isOpenNow ? 'Ochiq' : 'Yopiq' }}
+                  </span> -->
+                </div>
+              </div>
+            </div>
+            
+            <div class="flex items-center gap-2.5 bg-slate-50 rounded-xl px-3 py-2.5">
+              <Calendar :size="16" class="text-rose-500 shrink-0" />
+              <div class="flex flex-col">
+                <span class="text-[11px] text-slate-400 font-medium leading-none mb-1">Dam olish kunlari</span>
+                <span class="text-[13px] font-bold leading-none" :class="restDaysLabel ? 'text-rose-600' : 'text-black'">
+                  {{ restDaysLabel || "Har kuni" }}
+                </span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -144,58 +192,7 @@
         <!-- Divider -->
         <div class="mx-4 sm:mx-6 lg:mx-8 mt-5 h-px bg-slate-100"></div>
 
-        <!-- Info grid (2-column compact cards) -->
-        <div class="px-4 sm:px-6 lg:px-8 pt-4">
-          <h2
-            class="text-[15px] font-bold text-slate-900 mb-3 flex items-center gap-2"
-          >
-            <Info :size="16" class="text-blue-500" /> Ma'lumotlar
-          </h2>
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
-            <div class="bg-slate-50 rounded-2xl p-3.5">
-              <p class="text-xs text-slate-400">Ish vaqti</p>
-              <p class="text-sm font-bold text-slate-800 mt-0.5">
-                {{ facility.weekdayHours || facility.openingHours }}
-              </p>
-              <p
-                v-if="facility.weekendHours"
-                class="text-[11px] text-slate-400 mt-0.5"
-              >
-                DK: {{ facility.weekendHours }}
-              </p>
-            </div>
-            <div class="bg-slate-50 rounded-2xl p-3.5">
-              <p class="text-xs text-slate-400">Sig'im</p>
-              <p class="text-sm font-bold text-slate-800 mt-0.5">
-                {{ facility.maxCapacity || "—" }} kishi
-              </p>
-              <p
-                v-if="facility.trainerCount"
-                class="text-[11px] text-slate-400 mt-0.5"
-              >
-                {{ facility.trainerCount }} murabbiy
-              </p>
-            </div>
-            <div v-if="facility.area" class="bg-slate-50 rounded-2xl p-3.5">
-              <p class="text-xs text-slate-400">Maydon</p>
-              <p class="text-sm font-bold text-slate-800 mt-0.5">
-                {{ facility.area }} m²
-              </p>
-            </div>
-            <div
-              v-if="facility.established"
-              class="bg-slate-50 rounded-2xl p-3.5"
-            >
-              <p class="text-xs text-slate-400">Tashkil etilgan</p>
-              <p class="text-sm font-bold text-slate-800 mt-0.5">
-                {{ facility.established }}-yil
-              </p>
-            </div>
-          </div>
-        </div>
 
-        <!-- Divider -->
-        <div class="mx-4 sm:mx-6 lg:mx-8 mt-5 h-px bg-slate-100"></div>
 
         <!-- Amenities with icons -->
         <div class="px-4 sm:px-6 lg:px-8 pt-4">
@@ -452,7 +449,7 @@ import ToastNotification from "../components/ToastNotification.vue";
 import {
   ArrowLeft,
   MapPin,
-  BadgeCheck,
+
   Clock,
   Users,
   Phone,
@@ -495,6 +492,8 @@ import {
   Package,
   Wrench,
   SquareParking,
+  Mars,
+  Venus,
 } from "lucide-vue-next";
 
 const route = useRoute();
@@ -626,18 +625,71 @@ function getAmenityIcon(amenity) {
   return amenityIconMap[amenity] || markRaw(CheckCircle);
 }
 
+const dayKeys = ["sun", "mon", "tue", "wed", "thu", "fri", "sat"]; // JS Date.getDay() format
+const dayNamesUz = {
+  mon: "Dushanba",
+  tue: "Seshanba",
+  wed: "Chorshanba",
+  thu: "Payshanba",
+  fri: "Juma",
+  sat: "Shanba",
+  sun: "Yakshanba",
+};
+
+const workingDaysLabel = computed(() => {
+  if (!facility.value?.openDays) return "Har kuni";
+  if (facility.value.openDays.length === 7) return "Har kuni";
+  if (facility.value.openDays.length === 0) return "";
+  
+  // Simple range detection (e.g., Du-Ju)
+  const days = facility.value.openDays;
+  if (days.length === 5 && !days.includes('sat') && !days.includes('sun')) return "Du - Ju";
+  
+  return days.map(d => dayNamesUz[d].slice(0, 2)).join(", ");
+});
+
+const restDaysLabel = computed(() => {
+  if (!facility.value?.openDays) return "";
+  const all = Object.keys(dayNamesUz);
+  const rest = all.filter(d => !facility.value.openDays.includes(d));
+  if (rest.length === 0) return "";
+  return rest.map(d => dayNamesUz[d]).join(", ");
+});
+
 // Open/closed status check
 const isOpenNow = computed(() => {
   if (!facility.value) return false;
   const now = new Date();
+  const dayKey = dayKeys[now.getDay()];
+  
+  // Check if today is a rest day
+  if (facility.value.openDays && !facility.value.openDays.includes(dayKey)) {
+    return false;
+  }
+
   const hours = now.getHours();
-  const hoursStr =
-    facility.value.weekdayHours || facility.value.openingHours || "";
+  const minutes = now.getMinutes();
+  const totalMinutesNow = hours * 60 + minutes;
+
+  const hoursStr = facility.value.weekdayHours || facility.value.openingHours || "";
   const match = hoursStr.match(/(\d{1,2}):(\d{2})\s*[-–]\s*(\d{1,2}):(\d{2})/);
+  
   if (!match) return true;
+  
   const openH = parseInt(match[1]);
+  const openM = parseInt(match[2]);
   const closeH = parseInt(match[3]);
-  return hours >= openH && hours < closeH;
+  const closeM = parseInt(match[4]);
+  
+  const totalOpenMin = openH * 60 + openM;
+  let totalCloseMin = closeH * 60 + closeM;
+  
+  // Handle closing times past midnight (e.g., 23:00 - 02:00)
+  if (totalCloseMin <= totalOpenMin) {
+    totalCloseMin += 24 * 60;
+  }
+  
+  return totalMinutesNow >= totalOpenMin && totalMinutesNow < totalCloseMin;
 });
 
 function formatPrice(price) {

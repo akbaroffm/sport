@@ -3,6 +3,7 @@
     "id": "yoga-001",
     "name": "Zen Flow Studio",
     "type": "yoga",
+    "audience": "female",
     "description": "Serene yoga studio offering Vinyasa, Hatha, and Yin classes in a tranquil plant-filled space.",
     "address": "Oybek str. 30",
     "city": "Tashkent",
@@ -21,7 +22,12 @@
       "Meditation",
       "Breathwork"
     ],
-    "amenities": ["Mat Rental", "Showers", "Tea Lounge", "Wi-Fi"],
+    "amenities": [
+      "Mat Rental",
+      "Showers",
+      "Tea Lounge",
+      "Wi-Fi"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=800"
     ],
@@ -31,26 +37,43 @@
       "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800"
     ],
     "isNew": true,
-    "isVerified": true,
     "isFeatured": true,
-    "area": 200,
-    "trainerCount": 6,
-    "established": 2019,
-    "tags": ["Yoga", "Meditatsiya", "Moslashuvchanlik"],
-    "maxCapacity": 20,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Yoga",
+      "Meditatsiya",
+      "Moslashuvchanlik"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@zenflowstudio",
       "telegram": "@yoga-001"
     },
     "weekdayHours": "06:00–21:00",
     "weekendHours": "06:00–21:00",
-    "features": ["Vinyasa", "Hatha Yoga", "Mat Rental", "Showers"]
+    "features": [
+      "Vinyasa",
+      "Hatha Yoga",
+      "Mat Rental",
+      "Showers"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat"
+    ],
+    "noWeekends": false
   },
   {
     "id": "yoga-002",
     "name": "Lotus Mind Yoga",
     "type": "yoga",
+    "audience": "female",
     "description": "Yoga and mindfulness center with heated rooms, aerial yoga hammocks, and weekly retreats.",
     "address": "Labzak str. 15",
     "city": "Tashkent",
@@ -62,8 +85,18 @@
     "monthlyPrice": 550000,
     "openingHours": "07:00–21:00",
     "phone": "+998 71 256 7788",
-    "services": ["Hot Yoga", "Aerial Yoga", "Retreats", "Private Sessions"],
-    "amenities": ["Showers", "Locker Rooms", "Heated Rooms", "Juice Bar"],
+    "services": [
+      "Hot Yoga",
+      "Aerial Yoga",
+      "Retreats",
+      "Private Sessions"
+    ],
+    "amenities": [
+      "Showers",
+      "Locker Rooms",
+      "Heated Rooms",
+      "Juice Bar"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=800"
     ],
@@ -72,26 +105,45 @@
       "https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=800"
     ],
     "isNew": true,
-    "isVerified": false,
     "isFeatured": false,
-    "area": 300,
-    "trainerCount": 8,
-    "established": 2018,
-    "tags": ["Yoga", "Meditatsiya", "Moslashuvchanlik"],
-    "maxCapacity": 30,
-    "languages": ["O'zbekcha", "Ruscha", "English"],
+    "tags": [
+      "Yoga",
+      "Meditatsiya",
+      "Moslashuvchanlik"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha",
+      "English"
+    ],
     "socialMedia": {
       "instagram": "@lotusmindyoga",
       "telegram": "@yoga-002"
     },
     "weekdayHours": "07:00–21:00",
     "weekendHours": "07:00–21:00",
-    "features": ["Hot Yoga", "Aerial Yoga", "Showers", "Locker Rooms"]
+    "features": [
+      "Hot Yoga",
+      "Aerial Yoga",
+      "Showers",
+      "Locker Rooms"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "noWeekends": false
   },
   {
     "id": "yoga-003",
     "name": "Harmony Yoga Samarkand",
     "type": "yoga",
+    "audience": "both",
     "description": "Peaceful studio near the Registan with morning outdoor sessions and evening candlelit classes.",
     "address": "Mirzo Ulugbek str. 5",
     "city": "Samarkand",
@@ -103,8 +155,16 @@
     "monthlyPrice": 250000,
     "openingHours": "06:00–20:00",
     "phone": "+998 66 235 9900",
-    "services": ["Hatha Yoga", "Outdoor Sessions", "Meditation"],
-    "amenities": ["Mat Rental", "Garden", "Tea"],
+    "services": [
+      "Hatha Yoga",
+      "Outdoor Sessions",
+      "Meditation"
+    ],
+    "amenities": [
+      "Mat Rental",
+      "Garden",
+      "Tea"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800"
     ],
@@ -113,26 +173,44 @@
       "https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=800"
     ],
     "isNew": false,
-    "isVerified": true,
     "isFeatured": false,
-    "area": 150,
-    "trainerCount": 3,
-    "established": 2021,
-    "tags": ["Yoga", "Meditatsiya", "Moslashuvchanlik"],
-    "maxCapacity": 15,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Yoga",
+      "Meditatsiya",
+      "Moslashuvchanlik"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@harmonyyogasamarkand",
       "telegram": "@yoga-003"
     },
     "weekdayHours": "06:00–20:00",
     "weekendHours": "06:00–20:00",
-    "features": ["Hatha Yoga", "Outdoor Sessions", "Mat Rental", "Garden"]
+    "features": [
+      "Hatha Yoga",
+      "Outdoor Sessions",
+      "Mat Rental",
+      "Garden"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "noWeekends": false
   },
   {
     "id": "yoga-004",
     "name": "Sun Salute Studio",
     "type": "yoga",
+    "audience": "both",
     "description": "Bright studio with rooftop terrace, Ashtanga and Kundalini classes, and teacher training programs.",
     "address": "Navoi str. 88",
     "city": "Tashkent",
@@ -144,8 +222,18 @@
     "monthlyPrice": 380000,
     "openingHours": "05:30–21:00",
     "phone": "+998 71 248 1122",
-    "services": ["Ashtanga", "Kundalini", "Teacher Training", "Workshops"],
-    "amenities": ["Rooftop Terrace", "Showers", "Mat Rental", "Library"],
+    "services": [
+      "Ashtanga",
+      "Kundalini",
+      "Teacher Training",
+      "Workshops"
+    ],
+    "amenities": [
+      "Rooftop Terrace",
+      "Showers",
+      "Mat Rental",
+      "Library"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=800"
     ],
@@ -154,26 +242,44 @@
       "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=800"
     ],
     "isNew": false,
-    "isVerified": false,
     "isFeatured": false,
-    "area": 250,
-    "trainerCount": 5,
-    "established": 2020,
-    "tags": ["Yoga", "Meditatsiya", "Moslashuvchanlik"],
-    "maxCapacity": 25,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Yoga",
+      "Meditatsiya",
+      "Moslashuvchanlik"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@sunsalutestudio",
       "telegram": "@yoga-004"
     },
     "weekdayHours": "05:30–21:00",
     "weekendHours": "05:30–21:00",
-    "features": ["Ashtanga", "Kundalini", "Rooftop Terrace", "Showers"]
+    "features": [
+      "Ashtanga",
+      "Kundalini",
+      "Rooftop Terrace",
+      "Showers"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "noWeekends": false
   },
   {
     "id": "yoga-005",
     "name": "Prana Yoga Fergana",
     "type": "yoga",
+    "audience": "female",
     "description": "Community yoga studio with donation-based classes and special sessions for seniors.",
     "address": "Al-Fargoniy str. 22",
     "city": "Fergana",
@@ -185,8 +291,15 @@
     "monthlyPrice": 150000,
     "openingHours": "07:00–19:00",
     "phone": "+998 73 245 3344",
-    "services": ["Community Classes", "Senior Yoga", "Meditation"],
-    "amenities": ["Mat Rental", "Tea"],
+    "services": [
+      "Community Classes",
+      "Senior Yoga",
+      "Meditation"
+    ],
+    "amenities": [
+      "Mat Rental",
+      "Tea"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800"
     ],
@@ -194,26 +307,43 @@
       "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800"
     ],
     "isNew": false,
-    "isVerified": true,
     "isFeatured": false,
-    "area": 120,
-    "trainerCount": 2,
-    "established": 2023,
-    "tags": ["Yoga", "Meditatsiya", "Moslashuvchanlik"],
-    "maxCapacity": 12,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Yoga",
+      "Meditatsiya",
+      "Moslashuvchanlik"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@pranayogafergana",
       "telegram": "@yoga-005"
     },
     "weekdayHours": "07:00–19:00",
     "weekendHours": "07:00–19:00",
-    "features": ["Community Classes", "Senior Yoga", "Mat Rental", "Tea"]
+    "features": [
+      "Community Classes",
+      "Senior Yoga",
+      "Mat Rental",
+      "Tea"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat"
+    ],
+    "noWeekends": false
   },
   {
     "id": "yoga-006",
     "name": "Nirvana Yoga & Wellness",
     "type": "yoga",
+    "audience": "both",
     "description": "Holistic wellness center combining yoga, Ayurvedic treatments, and sound healing sessions.",
     "address": "Shaykhontohur str. 42",
     "city": "Tashkent",
@@ -232,7 +362,13 @@
       "Massage",
       "Detox Programs"
     ],
-    "amenities": ["Spa", "Steam Room", "Organic Cafe", "Showers", "Garden"],
+    "amenities": [
+      "Spa",
+      "Steam Room",
+      "Organic Cafe",
+      "Showers",
+      "Garden"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=800"
     ],
@@ -242,20 +378,36 @@
       "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800"
     ],
     "isNew": false,
-    "isVerified": false,
     "isFeatured": false,
-    "area": 400,
-    "trainerCount": 10,
-    "established": 2017,
-    "tags": ["Yoga", "Meditatsiya", "Moslashuvchanlik"],
-    "maxCapacity": 40,
-    "languages": ["O'zbekcha", "Ruscha", "English"],
+    "tags": [
+      "Yoga",
+      "Meditatsiya",
+      "Moslashuvchanlik"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha",
+      "English"
+    ],
     "socialMedia": {
       "instagram": "@nirvanayogawellness",
       "telegram": "@yoga-006"
     },
     "weekdayHours": "06:00–22:00",
     "weekendHours": "06:00–22:00",
-    "features": ["Yoga", "Ayurveda", "Spa", "Steam Room"]
+    "features": [
+      "Yoga",
+      "Ayurveda",
+      "Spa",
+      "Steam Room"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri"
+    ],
+    "noWeekends": true
   }
 ]

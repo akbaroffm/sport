@@ -3,6 +3,7 @@
     "id": "ma-001",
     "name": "Kurash Academy Tashkent",
     "type": "martial-arts",
+    "audience": "male",
     "description": "Traditional Uzbek Kurash wrestling academy with championship-trained coaches and competition prep.",
     "address": "Hamza str. 35",
     "city": "Tashkent",
@@ -20,7 +21,12 @@
       "Youth Programs",
       "Belt Grading"
     ],
-    "amenities": ["Training Mats", "Showers", "Locker Rooms", "Video Room"],
+    "amenities": [
+      "Training Mats",
+      "Showers",
+      "Locker Rooms",
+      "Video Room"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800"
     ],
@@ -29,14 +35,16 @@
       "https://images.unsplash.com/photo-1564415315949-7a0c4c73aab4?w=800"
     ],
     "isNew": true,
-    "isVerified": true,
     "isFeatured": true,
-    "area": 400,
-    "trainerCount": 8,
-    "established": 2014,
-    "tags": ["Jang", "Himoya", "Kurash"],
-    "maxCapacity": 40,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Jang",
+      "Himoya",
+      "Kurash"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@kurashacademytashkent",
       "telegram": "@ma-001"
@@ -48,12 +56,22 @@
       "Competition Prep",
       "Training Mats",
       "Showers"
-    ]
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat"
+    ],
+    "noWeekends": false
   },
   {
     "id": "ma-002",
     "name": "Dragon MMA Center",
     "type": "martial-arts",
+    "audience": "male",
     "description": "Mixed martial arts gym offering MMA, Brazilian Jiu-Jitsu, Muay Thai, and boxing classes.",
     "address": "Shota Rustaveli str. 45",
     "city": "Tashkent",
@@ -65,8 +83,20 @@
     "monthlyPrice": 550000,
     "openingHours": "07:00–22:00",
     "phone": "+998 71 259 5678",
-    "services": ["MMA", "BJJ", "Muay Thai", "Boxing", "Wrestling"],
-    "amenities": ["Octagon", "Heavy Bags", "Showers", "Sauna", "Pro Shop"],
+    "services": [
+      "MMA",
+      "BJJ",
+      "Muay Thai",
+      "Boxing",
+      "Wrestling"
+    ],
+    "amenities": [
+      "Octagon",
+      "Heavy Bags",
+      "Showers",
+      "Sauna",
+      "Pro Shop"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1564415315949-7a0c4c73aab4?w=800"
     ],
@@ -75,26 +105,45 @@
       "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800"
     ],
     "isNew": true,
-    "isVerified": false,
     "isFeatured": false,
-    "area": 600,
-    "trainerCount": 12,
-    "established": 2018,
-    "tags": ["Jang", "Himoya", "Kurash"],
-    "maxCapacity": 60,
-    "languages": ["O'zbekcha", "Ruscha", "English"],
+    "tags": [
+      "Jang",
+      "Himoya",
+      "Kurash"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha",
+      "English"
+    ],
     "socialMedia": {
       "instagram": "@dragonmmacenter",
       "telegram": "@ma-002"
     },
     "weekdayHours": "07:00–22:00",
     "weekendHours": "07:00–22:00",
-    "features": ["MMA", "BJJ", "Octagon", "Heavy Bags"]
+    "features": [
+      "MMA",
+      "BJJ",
+      "Octagon",
+      "Heavy Bags"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "noWeekends": false
   },
   {
     "id": "ma-003",
     "name": "Taekwondo Center Samarkand",
     "type": "martial-arts",
+    "audience": "male",
     "description": "Certified WTF Taekwondo school with Olympic-style training and kids programs.",
     "address": "Amir Temur str. 55",
     "city": "Samarkand",
@@ -106,8 +155,18 @@
     "monthlyPrice": 200000,
     "openingHours": "08:00–20:00",
     "phone": "+998 66 239 9012",
-    "services": ["Taekwondo", "Belt Grading", "Kids Classes", "Competition"],
-    "amenities": ["Training Hall", "Mats", "Changing Rooms", "Parking"],
+    "services": [
+      "Taekwondo",
+      "Belt Grading",
+      "Kids Classes",
+      "Competition"
+    ],
+    "amenities": [
+      "Training Hall",
+      "Mats",
+      "Changing Rooms",
+      "Parking"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800"
     ],
@@ -115,26 +174,44 @@
       "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800"
     ],
     "isNew": false,
-    "isVerified": true,
     "isFeatured": false,
-    "area": 300,
-    "trainerCount": 5,
-    "established": 2020,
-    "tags": ["Jang", "Himoya", "Kurash"],
-    "maxCapacity": 30,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Jang",
+      "Himoya",
+      "Kurash"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@taekwondocentersamarkand",
       "telegram": "@ma-003"
     },
     "weekdayHours": "08:00–20:00",
     "weekendHours": "08:00–20:00",
-    "features": ["Taekwondo", "Belt Grading", "Training Hall", "Mats"]
+    "features": [
+      "Taekwondo",
+      "Belt Grading",
+      "Training Hall",
+      "Mats"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "noWeekends": false
   },
   {
     "id": "ma-004",
     "name": "Iron Fist Boxing Club",
     "type": "martial-arts",
+    "audience": "male",
     "description": "Professional boxing gym with ring, speed bags, heavy bags, and sparring sessions.",
     "address": "Kukcha str. 12",
     "city": "Tashkent",
@@ -146,8 +223,18 @@
     "monthlyPrice": 320000,
     "openingHours": "06:00–22:00",
     "phone": "+998 71 255 3456",
-    "services": ["Boxing", "Sparring", "Fitness Boxing", "Youth Training"],
-    "amenities": ["Boxing Ring", "Heavy Bags", "Speed Bags", "Showers"],
+    "services": [
+      "Boxing",
+      "Sparring",
+      "Fitness Boxing",
+      "Youth Training"
+    ],
+    "amenities": [
+      "Boxing Ring",
+      "Heavy Bags",
+      "Speed Bags",
+      "Showers"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1564415315949-7a0c4c73aab4?w=800"
     ],
@@ -155,26 +242,44 @@
       "https://images.unsplash.com/photo-1564415315949-7a0c4c73aab4?w=800"
     ],
     "isNew": false,
-    "isVerified": false,
     "isFeatured": false,
-    "area": 350,
-    "trainerCount": 6,
-    "established": 2017,
-    "tags": ["Jang", "Himoya", "Kurash"],
-    "maxCapacity": 35,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Jang",
+      "Himoya",
+      "Kurash"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@ironfistboxingclub",
       "telegram": "@ma-004"
     },
     "weekdayHours": "06:00–22:00",
     "weekendHours": "06:00–22:00",
-    "features": ["Boxing", "Sparring", "Boxing Ring", "Heavy Bags"]
+    "features": [
+      "Boxing",
+      "Sparring",
+      "Boxing Ring",
+      "Heavy Bags"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "noWeekends": false
   },
   {
     "id": "ma-005",
     "name": "Sambo School Fergana",
     "type": "martial-arts",
+    "audience": "male",
     "description": "Sport and combat Sambo training facility with experienced national-level coaches.",
     "address": "Mustakillik str. 30",
     "city": "Fergana",
@@ -186,8 +291,17 @@
     "monthlyPrice": 180000,
     "openingHours": "07:00–20:00",
     "phone": "+998 73 248 7890",
-    "services": ["Sport Sambo", "Combat Sambo", "Self-Defense", "Grappling"],
-    "amenities": ["Training Mats", "Weights", "Showers"],
+    "services": [
+      "Sport Sambo",
+      "Combat Sambo",
+      "Self-Defense",
+      "Grappling"
+    ],
+    "amenities": [
+      "Training Mats",
+      "Weights",
+      "Showers"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800"
     ],
@@ -195,26 +309,43 @@
       "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800"
     ],
     "isNew": false,
-    "isVerified": true,
     "isFeatured": false,
-    "area": 250,
-    "trainerCount": 4,
-    "established": 2021,
-    "tags": ["Jang", "Himoya", "Kurash"],
-    "maxCapacity": 25,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Jang",
+      "Himoya",
+      "Kurash"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@samboschoolfergana",
       "telegram": "@ma-005"
     },
     "weekdayHours": "07:00–20:00",
     "weekendHours": "07:00–20:00",
-    "features": ["Sport Sambo", "Combat Sambo", "Training Mats", "Weights"]
+    "features": [
+      "Sport Sambo",
+      "Combat Sambo",
+      "Training Mats",
+      "Weights"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat"
+    ],
+    "noWeekends": false
   },
   {
     "id": "ma-006",
     "name": "Warrior Martial Arts",
     "type": "martial-arts",
+    "audience": "male",
     "description": "All-in-one martial arts academy with karate, judo, kickboxing, and self-defense courses.",
     "address": "Beruniy str. 18",
     "city": "Tashkent",
@@ -226,7 +357,13 @@
     "monthlyPrice": 300000,
     "openingHours": "07:00–21:00",
     "phone": "+998 71 264 1122",
-    "services": ["Karate", "Judo", "Kickboxing", "Self-Defense", "Fitness"],
+    "services": [
+      "Karate",
+      "Judo",
+      "Kickboxing",
+      "Self-Defense",
+      "Fitness"
+    ],
     "amenities": [
       "Training Hall",
       "Mats",
@@ -242,20 +379,35 @@
       "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800"
     ],
     "isNew": false,
-    "isVerified": false,
     "isFeatured": false,
-    "area": 500,
-    "trainerCount": 7,
-    "established": 2019,
-    "tags": ["Jang", "Himoya", "Kurash"],
-    "maxCapacity": 50,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Jang",
+      "Himoya",
+      "Kurash"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@warriormartialarts",
       "telegram": "@ma-006"
     },
     "weekdayHours": "07:00–21:00",
     "weekendHours": "07:00–21:00",
-    "features": ["Karate", "Judo", "Training Hall", "Mats"]
+    "features": [
+      "Karate",
+      "Judo",
+      "Training Hall",
+      "Mats"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri"
+    ],
+    "noWeekends": true
   }
 ]

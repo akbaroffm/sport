@@ -89,8 +89,9 @@ for (const [file, type] of Object.entries(files)) {
 
   data.forEach((item, i) => {
     item.isNew = i < 2;
-    item.isVerified = i % 2 === 0;
     item.isFeatured = i === 0;
+    item.openDays = ["mon", "tue", "wed", "thu", "fri"];
+    item.noWeekends = false;
     item.area = enr.area[i] || 300;
     item.trainerCount = enr.trainerCount[i] || 3;
     item.established = enr.established[i] || 2020;

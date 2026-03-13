@@ -247,26 +247,7 @@
                   </div>
                 </td>
               </tr>
-              <tr>
-                <td class="p-3 font-semibold text-slate-400">Maydon</td>
-                <td
-                  v-for="f in comparisonFacilities"
-                  :key="f.id"
-                  class="p-3 text-center"
-                >
-                  {{ f.area ? f.area + " m²" : "—" }}
-                </td>
-              </tr>
-              <tr class="bg-slate-50/50">
-                <td class="p-3 font-semibold text-slate-400">Sig'im</td>
-                <td
-                  v-for="f in comparisonFacilities"
-                  :key="f.id"
-                  class="p-3 text-center"
-                >
-                  {{ f.maxCapacity || "—" }}
-                </td>
-              </tr>
+
             </tbody>
           </table>
         </div>

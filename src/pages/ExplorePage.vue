@@ -216,6 +216,48 @@
             </div>
           </div>
 
+          <!-- Gender / audience -->
+          <div>
+            <p class="text-xs font-semibold text-slate-500 mb-2">
+              Kimlar uchun
+            </p>
+            <div class="flex gap-1.5 flex-wrap">
+              <button
+                @click="searchStore.genderFilter = 'all'"
+                :class="[
+                  'px-3 py-1.5 rounded-full text-[11px] font-semibold transition-colors',
+                  searchStore.genderFilter === 'all'
+                    ? 'bg-slate-900 text-white'
+                    : 'bg-slate-100 text-slate-600',
+                ]"
+              >
+                Hammasi
+              </button>
+              <button
+                @click="searchStore.genderFilter = 'male'"
+                :class="[
+                  'px-3 py-1.5 rounded-full text-[11px] font-semibold transition-colors',
+                  searchStore.genderFilter === 'male'
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-slate-100 text-slate-600',
+                ]"
+              >
+                Faqat erkaklar
+              </button>
+              <button
+                @click="searchStore.genderFilter = 'female'"
+                :class="[
+                  'px-3 py-1.5 rounded-full text-[11px] font-semibold transition-colors',
+                  searchStore.genderFilter === 'female'
+                    ? 'bg-pink-600 text-white'
+                    : 'bg-slate-100 text-slate-600',
+                ]"
+              >
+                Faqat ayollar
+              </button>
+            </div>
+          </div>
+
           <!-- Amenities filter -->
           <div>
             <p class="text-xs font-semibold text-slate-500 mb-2">
@@ -286,6 +328,19 @@
       >
         {{ searchStore.ratingFilter }}+
         <button @click="searchStore.ratingFilter = 0"><X :size="12" /></button>
+      </span>
+      <span
+        v-if="searchStore.genderFilter !== 'all'"
+        class="inline-flex items-center gap-1 bg-blue-50 text-blue-700 text-[11px] font-semibold px-2.5 py-1 rounded-full"
+      >
+        {{
+          searchStore.genderFilter === "male"
+            ? "Faqat erkaklar"
+            : "Faqat ayollar"
+        }}
+        <button @click="searchStore.genderFilter = 'all'">
+          <X :size="12" />
+        </button>
       </span>
       <span
         v-for="a in selectedAmenities"
@@ -640,6 +695,7 @@ const isSearchActive = computed(
     searchStore.cityFilter !== "all" ||
     searchStore.priceFilter !== "all" ||
     searchStore.ratingFilter > 0 ||
+    searchStore.genderFilter !== "all" ||
     selectedAmenities.value.length > 0,
 );
 
@@ -649,6 +705,7 @@ const activeFilterCount = computed(() => {
   if (searchStore.priceFilter !== "all") c++;
   if (searchStore.ratingFilter > 0) c++;
   if (searchStore.sortBy !== "rating") c++;
+   if (searchStore.genderFilter !== "all") c++;
   c += selectedAmenities.value.length;
   return c;
 });

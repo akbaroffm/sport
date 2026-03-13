@@ -3,6 +3,7 @@
     "id": "aer-001",
     "name": "FitDance Studio",
     "type": "aerobics",
+    "audience": "both",
     "description": "High-energy aerobics and dance fitness studio with Zumba, step, and HIIT classes.",
     "address": "Amir Temur str. 82",
     "city": "Tashkent",
@@ -21,7 +22,12 @@
       "Dance Fitness",
       "Stretch & Tone"
     ],
-    "amenities": ["Mirrored Studio", "Sound System", "Showers", "Water Cooler"],
+    "amenities": [
+      "Mirrored Studio",
+      "Sound System",
+      "Showers",
+      "Water Cooler"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800"
     ],
@@ -30,26 +36,43 @@
       "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=800"
     ],
     "isNew": true,
-    "isVerified": true,
     "isFeatured": true,
-    "area": 250,
-    "trainerCount": 5,
-    "established": 2020,
-    "tags": ["Raqs", "Kardio", "Energiya"],
-    "maxCapacity": 25,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Raqs",
+      "Kardio",
+      "Energiya"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@fitdancestudio",
       "telegram": "@aer-001"
     },
     "weekdayHours": "06:00–21:00",
     "weekendHours": "06:00–21:00",
-    "features": ["Zumba", "Step Aerobics", "Mirrored Studio", "Sound System"]
+    "features": [
+      "Zumba",
+      "Step Aerobics",
+      "Mirrored Studio",
+      "Sound System"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat"
+    ],
+    "noWeekends": false
   },
   {
     "id": "aer-002",
     "name": "Step & Tone Center",
     "type": "aerobics",
+    "audience": "female",
     "description": "Women-focused aerobics center with morning and evening classes, childcare available.",
     "address": "Mirabad str. 30",
     "city": "Tashkent",
@@ -61,8 +84,18 @@
     "monthlyPrice": 250000,
     "openingHours": "07:00–20:00",
     "phone": "+998 71 244 5678",
-    "services": ["Low-Impact Aerobics", "Step Classes", "Pilates", "Childcare"],
-    "amenities": ["Studio", "Childcare Room", "Showers", "Parking"],
+    "services": [
+      "Low-Impact Aerobics",
+      "Step Classes",
+      "Pilates",
+      "Childcare"
+    ],
+    "amenities": [
+      "Studio",
+      "Childcare Room",
+      "Showers",
+      "Parking"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=800"
     ],
@@ -71,14 +104,16 @@
       "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800"
     ],
     "isNew": true,
-    "isVerified": false,
     "isFeatured": false,
-    "area": 200,
-    "trainerCount": 4,
-    "established": 2019,
-    "tags": ["Raqs", "Kardio", "Energiya"],
-    "maxCapacity": 20,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Raqs",
+      "Kardio",
+      "Energiya"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@steptonecenter",
       "telegram": "@aer-002"
@@ -90,12 +125,23 @@
       "Step Classes",
       "Studio",
       "Childcare Room"
-    ]
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "noWeekends": false
   },
   {
     "id": "aer-003",
     "name": "Rhythm Fitness Samarkand",
     "type": "aerobics",
+    "audience": "female",
     "description": "Dance aerobics studio with Latin, Bollywood, and K-pop inspired workout sessions.",
     "address": "Navoi str. 22",
     "city": "Samarkand",
@@ -107,8 +153,16 @@
     "monthlyPrice": 200000,
     "openingHours": "08:00–20:00",
     "phone": "+998 66 237 9012",
-    "services": ["Latin Dance Fitness", "K-Pop Fitness", "Bollywood Workout"],
-    "amenities": ["Studio", "Sound System", "Changing Rooms"],
+    "services": [
+      "Latin Dance Fitness",
+      "K-Pop Fitness",
+      "Bollywood Workout"
+    ],
+    "amenities": [
+      "Studio",
+      "Sound System",
+      "Changing Rooms"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800"
     ],
@@ -116,14 +170,16 @@
       "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800"
     ],
     "isNew": false,
-    "isVerified": true,
     "isFeatured": false,
-    "area": 180,
-    "trainerCount": 3,
-    "established": 2021,
-    "tags": ["Raqs", "Kardio", "Energiya"],
-    "maxCapacity": 18,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Raqs",
+      "Kardio",
+      "Energiya"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@rhythmfitnesssamarkand",
       "telegram": "@aer-003"
@@ -135,12 +191,23 @@
       "K-Pop Fitness",
       "Studio",
       "Sound System"
-    ]
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "noWeekends": false
   },
   {
     "id": "aer-004",
     "name": "Cardio Blast Tashkent",
     "type": "aerobics",
+    "audience": "both",
     "description": "Intense cardio-focused studio with boxing aerobics, circuit training, and boot camps.",
     "address": "Yunusabad str. 20",
     "city": "Tashkent",
@@ -158,7 +225,12 @@
       "Boot Camp",
       "Core Blast"
     ],
-    "amenities": ["Heavy Bags", "Studio", "Showers", "Lockers"],
+    "amenities": [
+      "Heavy Bags",
+      "Studio",
+      "Showers",
+      "Lockers"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=800"
     ],
@@ -166,26 +238,44 @@
       "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=800"
     ],
     "isNew": false,
-    "isVerified": false,
     "isFeatured": false,
-    "area": 300,
-    "trainerCount": 6,
-    "established": 2018,
-    "tags": ["Raqs", "Kardio", "Energiya"],
-    "maxCapacity": 30,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Raqs",
+      "Kardio",
+      "Energiya"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@cardioblasttashkent",
       "telegram": "@aer-004"
     },
     "weekdayHours": "05:30–22:00",
     "weekendHours": "05:30–22:00",
-    "features": ["Boxing Aerobics", "Circuit Training", "Heavy Bags", "Studio"]
+    "features": [
+      "Boxing Aerobics",
+      "Circuit Training",
+      "Heavy Bags",
+      "Studio"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "noWeekends": false
   },
   {
     "id": "aer-005",
     "name": "Aqua Aerobics Hub",
     "type": "aerobics",
+    "audience": "female",
     "description": "Specialized aqua aerobics facility with heated pool and joint-friendly water workouts.",
     "address": "Sergeli str. 40",
     "city": "Tashkent",
@@ -197,8 +287,18 @@
     "monthlyPrice": 400000,
     "openingHours": "07:00–21:00",
     "phone": "+998 71 272 7890",
-    "services": ["Aqua Aerobics", "Water Yoga", "Aqua Zumba", "Rehab Swimming"],
-    "amenities": ["Heated Pool", "Showers", "Locker Rooms", "Towels"],
+    "services": [
+      "Aqua Aerobics",
+      "Water Yoga",
+      "Aqua Zumba",
+      "Rehab Swimming"
+    ],
+    "amenities": [
+      "Heated Pool",
+      "Showers",
+      "Locker Rooms",
+      "Towels"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800"
     ],
@@ -206,26 +306,43 @@
       "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800"
     ],
     "isNew": false,
-    "isVerified": true,
     "isFeatured": false,
-    "area": 350,
-    "trainerCount": 4,
-    "established": 2020,
-    "tags": ["Raqs", "Kardio", "Energiya"],
-    "maxCapacity": 35,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Raqs",
+      "Kardio",
+      "Energiya"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@aquaaerobicshub",
       "telegram": "@aer-005"
     },
     "weekdayHours": "07:00–21:00",
     "weekendHours": "07:00–21:00",
-    "features": ["Aqua Aerobics", "Water Yoga", "Heated Pool", "Showers"]
+    "features": [
+      "Aqua Aerobics",
+      "Water Yoga",
+      "Heated Pool",
+      "Showers"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat"
+    ],
+    "noWeekends": false
   },
   {
     "id": "aer-006",
     "name": "Groove Studio Bukhara",
     "type": "aerobics",
+    "audience": "both",
     "description": "Fun and welcoming aerobics studio with group energy, playlist-driven sessions.",
     "address": "Afrosiyob str. 10",
     "city": "Bukhara",
@@ -237,8 +354,16 @@
     "monthlyPrice": 160000,
     "openingHours": "07:00–19:00",
     "phone": "+998 65 227 1122",
-    "services": ["Group Aerobics", "Dance Fitness", "Flexibility"],
-    "amenities": ["Studio", "Sound System", "Changing Rooms"],
+    "services": [
+      "Group Aerobics",
+      "Dance Fitness",
+      "Flexibility"
+    ],
+    "amenities": [
+      "Studio",
+      "Sound System",
+      "Changing Rooms"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=800"
     ],
@@ -246,20 +371,35 @@
       "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=800"
     ],
     "isNew": false,
-    "isVerified": false,
     "isFeatured": false,
-    "area": 150,
-    "trainerCount": 2,
-    "established": 2022,
-    "tags": ["Raqs", "Kardio", "Energiya"],
-    "maxCapacity": 15,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Raqs",
+      "Kardio",
+      "Energiya"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@groovestudiobukhara",
       "telegram": "@aer-006"
     },
     "weekdayHours": "07:00–19:00",
     "weekendHours": "07:00–19:00",
-    "features": ["Group Aerobics", "Dance Fitness", "Studio", "Sound System"]
+    "features": [
+      "Group Aerobics",
+      "Dance Fitness",
+      "Studio",
+      "Sound System"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri"
+    ],
+    "noWeekends": true
   }
 ]

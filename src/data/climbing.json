@@ -3,6 +3,7 @@
     "id": "clm-001",
     "name": "Summit Climbing Gym",
     "type": "climbing",
+    "audience": "both",
     "description": "Tashkent's premier indoor climbing facility with bouldering walls, lead routes, and auto-belays.",
     "address": "Sergeli str. 24",
     "city": "Tashkent",
@@ -21,7 +22,13 @@
       "Coaching",
       "Kids Wall"
     ],
-    "amenities": ["Rental Gear", "Crash Pads", "Showers", "Cafe", "Pro Shop"],
+    "amenities": [
+      "Rental Gear",
+      "Crash Pads",
+      "Showers",
+      "Cafe",
+      "Pro Shop"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1522163182402-834f871fd851?w=800"
     ],
@@ -30,26 +37,44 @@
       "https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=800"
     ],
     "isNew": true,
-    "isVerified": true,
     "isFeatured": true,
-    "area": 600,
-    "trainerCount": 6,
-    "established": 2019,
-    "tags": ["Alpinizm", "Balandlik", "Kuch"],
-    "maxCapacity": 60,
-    "languages": ["O'zbekcha", "Ruscha", "English"],
+    "tags": [
+      "Alpinizm",
+      "Balandlik",
+      "Kuch"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha",
+      "English"
+    ],
     "socialMedia": {
       "instagram": "@summitclimbinggym",
       "telegram": "@clm-001"
     },
     "weekdayHours": "08:00–22:00",
     "weekendHours": "08:00–22:00",
-    "features": ["Bouldering", "Lead Climbing", "Rental Gear", "Crash Pads"]
+    "features": [
+      "Bouldering",
+      "Lead Climbing",
+      "Rental Gear",
+      "Crash Pads"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat"
+    ],
+    "noWeekends": false
   },
   {
     "id": "clm-002",
     "name": "Vertical World",
     "type": "climbing",
+    "audience": "both",
     "description": "Multi-level bouldering gym with routes reset weekly and competition-grade walls.",
     "address": "Yakkasaray str. 11",
     "city": "Tashkent",
@@ -67,7 +92,12 @@
       "Competitions",
       "Training Plans"
     ],
-    "amenities": ["Rental Shoes", "Chalk", "Showers", "Lounge"],
+    "amenities": [
+      "Rental Shoes",
+      "Chalk",
+      "Showers",
+      "Lounge"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=800"
     ],
@@ -76,26 +106,44 @@
       "https://images.unsplash.com/photo-1522163182402-834f871fd851?w=800"
     ],
     "isNew": true,
-    "isVerified": false,
     "isFeatured": false,
-    "area": 500,
-    "trainerCount": 5,
-    "established": 2020,
-    "tags": ["Alpinizm", "Balandlik", "Kuch"],
-    "maxCapacity": 50,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Alpinizm",
+      "Balandlik",
+      "Kuch"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@verticalworld",
       "telegram": "@clm-002"
     },
     "weekdayHours": "09:00–22:00",
     "weekendHours": "09:00–22:00",
-    "features": ["Bouldering", "Route Setting", "Rental Shoes", "Chalk"]
+    "features": [
+      "Bouldering",
+      "Route Setting",
+      "Rental Shoes",
+      "Chalk"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "noWeekends": false
   },
   {
     "id": "clm-003",
     "name": "Rock Lab Samarkand",
     "type": "climbing",
+    "audience": "both",
     "description": "Climbing gym with outdoor bouldering garden and guided outdoor trips to nearby mountains.",
     "address": "Sharof Rashidov str. 15",
     "city": "Samarkand",
@@ -107,8 +155,16 @@
     "monthlyPrice": 220000,
     "openingHours": "08:00–21:00",
     "phone": "+998 66 236 9012",
-    "services": ["Indoor Climbing", "Outdoor Trips", "Guided Bouldering"],
-    "amenities": ["Rental Gear", "Outdoor Garden", "Changing Rooms"],
+    "services": [
+      "Indoor Climbing",
+      "Outdoor Trips",
+      "Guided Bouldering"
+    ],
+    "amenities": [
+      "Rental Gear",
+      "Outdoor Garden",
+      "Changing Rooms"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1522163182402-834f871fd851?w=800"
     ],
@@ -116,14 +172,16 @@
       "https://images.unsplash.com/photo-1522163182402-834f871fd851?w=800"
     ],
     "isNew": false,
-    "isVerified": true,
     "isFeatured": false,
-    "area": 400,
-    "trainerCount": 3,
-    "established": 2021,
-    "tags": ["Alpinizm", "Balandlik", "Kuch"],
-    "maxCapacity": 40,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Alpinizm",
+      "Balandlik",
+      "Kuch"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@rocklabsamarkand",
       "telegram": "@clm-003"
@@ -135,12 +193,23 @@
       "Outdoor Trips",
       "Rental Gear",
       "Outdoor Garden"
-    ]
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "noWeekends": false
   },
   {
     "id": "clm-004",
     "name": "Grip Strength Center",
     "type": "climbing",
+    "audience": "both",
     "description": "Training-focused climbing gym with hangboards, campus boards, and strength training zone.",
     "address": "Tafakkur str. 7",
     "city": "Tashkent",
@@ -158,7 +227,12 @@
       "Campus Board",
       "Yoga for Climbers"
     ],
-    "amenities": ["Training Zone", "Showers", "Chalk Bar", "Wi-Fi"],
+    "amenities": [
+      "Training Zone",
+      "Showers",
+      "Chalk Bar",
+      "Wi-Fi"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=800"
     ],
@@ -166,14 +240,16 @@
       "https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=800"
     ],
     "isNew": false,
-    "isVerified": false,
     "isFeatured": false,
-    "area": 550,
-    "trainerCount": 4,
-    "established": 2019,
-    "tags": ["Alpinizm", "Balandlik", "Kuch"],
-    "maxCapacity": 55,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Alpinizm",
+      "Balandlik",
+      "Kuch"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@gripstrengthcenter",
       "telegram": "@clm-004"
@@ -185,12 +261,23 @@
       "Hangboard Workouts",
       "Training Zone",
       "Showers"
-    ]
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat",
+      "sun"
+    ],
+    "noWeekends": false
   },
   {
     "id": "clm-005",
     "name": "Chimgan Rock Adventures",
     "type": "climbing",
+    "audience": "both",
     "description": "Outdoor climbing guides based near Chimgan mountains with equipment rental and courses.",
     "address": "Chimgan Resort Area",
     "city": "Chimgan",
@@ -222,14 +309,16 @@
       "https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=800"
     ],
     "isNew": false,
-    "isVerified": true,
     "isFeatured": false,
-    "area": 200,
-    "trainerCount": 8,
-    "established": 2016,
-    "tags": ["Alpinizm", "Balandlik", "Kuch"],
-    "maxCapacity": 20,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Alpinizm",
+      "Balandlik",
+      "Kuch"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@chimganrockadventures",
       "telegram": "@clm-005"
@@ -241,12 +330,22 @@
       "Multi-pitch",
       "Full Gear Rental",
       "Transport"
-    ]
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri",
+      "sat"
+    ],
+    "noWeekends": false
   },
   {
     "id": "clm-006",
     "name": "Boulder Box Tashkent",
     "type": "climbing",
+    "audience": "both",
     "description": "Casual bouldering gym perfect for beginners. Open mat area and friendly community vibe.",
     "address": "Minor str. 20",
     "city": "Tashkent",
@@ -258,8 +357,17 @@
     "monthlyPrice": 250000,
     "openingHours": "10:00–22:00",
     "phone": "+998 71 273 1122",
-    "services": ["Bouldering", "Beginner Courses", "Birthday Parties"],
-    "amenities": ["Rental Shoes", "Crash Pads", "Snack Bar", "Wi-Fi"],
+    "services": [
+      "Bouldering",
+      "Beginner Courses",
+      "Birthday Parties"
+    ],
+    "amenities": [
+      "Rental Shoes",
+      "Crash Pads",
+      "Snack Bar",
+      "Wi-Fi"
+    ],
     "images": [
       "https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=800"
     ],
@@ -267,20 +375,35 @@
       "https://images.unsplash.com/photo-1564769662533-4f00a87b4056?w=800"
     ],
     "isNew": false,
-    "isVerified": false,
     "isFeatured": false,
-    "area": 350,
-    "trainerCount": 3,
-    "established": 2022,
-    "tags": ["Alpinizm", "Balandlik", "Kuch"],
-    "maxCapacity": 35,
-    "languages": ["O'zbekcha", "Ruscha"],
+    "tags": [
+      "Alpinizm",
+      "Balandlik",
+      "Kuch"
+    ],
+    "languages": [
+      "O'zbekcha",
+      "Ruscha"
+    ],
     "socialMedia": {
       "instagram": "@boulderboxtashkent",
       "telegram": "@clm-006"
     },
     "weekdayHours": "10:00–22:00",
     "weekendHours": "10:00–22:00",
-    "features": ["Bouldering", "Beginner Courses", "Rental Shoes", "Crash Pads"]
+    "features": [
+      "Bouldering",
+      "Beginner Courses",
+      "Rental Shoes",
+      "Crash Pads"
+    ],
+    "openDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri"
+    ],
+    "noWeekends": true
   }
 ]

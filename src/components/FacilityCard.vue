@@ -17,14 +17,25 @@
       <div class="absolute top-2.5 right-2.5">
         <FavoriteButton :id="facility.id" />
       </div>
-      <!-- Verified badge -->
+      <!-- Gender badge -->
       <div
-        v-if="facility.isVerified"
-        class="absolute bottom-2.5 left-2.5 flex items-center gap-1 bg-emerald-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full"
+        v-if="facility.audience === 'male' || facility.audience === 'female'"
+        class="absolute top-2.5 left-2.5 flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold"
+        :class="
+          facility.audience === 'male'
+            ? 'bg-blue-600 text-white'
+            : 'bg-pink-500 text-white'
+        "
       >
-        <BadgeCheck :size="12" />
-        Tasdiqlangan
+        <component
+          :is="facility.audience === 'male' ? Mars : Venus"
+          :size="12"
+        />
+        <span>
+          {{ facility.audience === "male" ? "Erkaklar uchun" : "Ayollar uchun" }}
+        </span>
       </div>
+
       <!-- New badge -->
       <div
         v-if="facility.isNew"
@@ -50,16 +61,6 @@
       <!-- Specs row -->
       <div class="flex items-center gap-2 mt-2 text-[11px] text-slate-500">
         <span class="flex items-center gap-0.5">
-          <Users :size="12" />
-          {{ facility.maxCapacity || "—" }}
-        </span>
-        <span class="w-px h-3 bg-slate-200"></span>
-        <span class="flex items-center gap-0.5">
-          <Ruler :size="12" />
-          {{ facility.area ? facility.area + " m²" : "—" }}
-        </span>
-        <span class="w-px h-3 bg-slate-200"></span>
-        <span class="flex items-center gap-0.5">
           <Star :size="12" class="text-yellow-400" fill="currentColor" />
           {{ facility.rating }}
         </span>
@@ -80,11 +81,11 @@
 import FavoriteButton from "./FavoriteButton.vue";
 import {
   MapPin,
-  Users,
-  Ruler,
   Star,
-  BadgeCheck,
+
   ImageIcon,
+  Mars,
+  Venus,
 } from "lucide-vue-next";
 
 defineProps({
