@@ -1,7 +1,7 @@
 <template>
   <router-link
     :to="`/facility/${facility.id}`"
-    class="block bg-white rounded-2xl overflow-hidden transition-all"
+    class="block bg-white rounded-2xl overflow-hidden transition-all border border-gray-200"
   >
     <!-- Image -->
     <div class="relative">
@@ -32,7 +32,9 @@
           :size="12"
         />
         <span>
-          {{ facility.audience === "male" ? "Erkaklar uchun" : "Ayollar uchun" }}
+          {{
+            facility.audience === "male" ? "Erkaklar uchun" : "Ayollar uchun"
+          }}
         </span>
       </div>
 
@@ -79,14 +81,7 @@
 
 <script setup>
 import FavoriteButton from "./FavoriteButton.vue";
-import {
-  MapPin,
-  Star,
-
-  ImageIcon,
-  Mars,
-  Venus,
-} from "lucide-vue-next";
+import { MapPin, Star, ImageIcon, Mars, Venus } from "lucide-vue-next";
 
 defineProps({
   facility: { type: Object, required: true },

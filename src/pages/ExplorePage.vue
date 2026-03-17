@@ -82,7 +82,7 @@
             :class="[
               'shrink-0 flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-[12px] font-semibold transition-all whitespace-nowrap',
               searchStore.activeCategory === cat.key
-                ? 'bg-blue-600 text-white shadow-sm shadow-blue-200'
+                ? 'bg-blue-600 text-white'
                 : 'bg-slate-50 text-slate-500 hover:text-blue-600 hover:bg-blue-50',
             ]"
           >
@@ -112,7 +112,7 @@
                 :class="[
                   'px-3 py-1.5 rounded-full text-[11px] font-semibold transition-colors',
                   searchStore.cityFilter === 'all'
-                    ? 'bg-slate-900 text-white'
+                    ? 'bg-blue-600 text-white'
                     : 'bg-slate-100 text-slate-600',
                 ]"
               >
@@ -128,7 +128,7 @@
                 :class="[
                   'px-3 py-1.5 rounded-full text-[11px] font-semibold transition-colors',
                   searchStore.cityFilter === c
-                    ? 'bg-slate-900 text-white'
+                    ? 'bg-blue-600 text-white'
                     : 'bg-slate-100 text-slate-600',
                 ]"
               >
@@ -167,7 +167,7 @@
                 :class="[
                   'px-3 py-1.5 rounded-full text-[11px] font-semibold transition-colors',
                   searchStore.priceFilter === p.value
-                    ? 'bg-slate-900 text-white'
+                    ? 'bg-blue-600 text-white'
                     : 'bg-slate-100 text-slate-600',
                 ]"
               >
@@ -187,7 +187,7 @@
                 :class="[
                   'px-3 py-1.5 rounded-full text-[11px] font-semibold transition-colors',
                   searchStore.sortBy === s.value
-                    ? 'bg-slate-900 text-white'
+                    ? 'bg-blue-600 text-white'
                     : 'bg-slate-100 text-slate-600',
                 ]"
               >
@@ -207,7 +207,7 @@
                 :class="[
                   'px-3 py-1.5 rounded-full text-[11px] font-semibold transition-colors',
                   searchStore.ratingFilter === r
-                    ? 'bg-slate-900 text-white'
+                    ? 'bg-blue-600 text-white'
                     : 'bg-slate-100 text-slate-600',
                 ]"
               >
@@ -227,7 +227,7 @@
                 :class="[
                   'px-3 py-1.5 rounded-full text-[11px] font-semibold transition-colors',
                   searchStore.genderFilter === 'all'
-                    ? 'bg-slate-900 text-white'
+                    ? 'bg-blue-600 text-white'
                     : 'bg-slate-100 text-slate-600',
                 ]"
               >
@@ -271,7 +271,7 @@
                 :class="[
                   'px-3 py-1.5 rounded-full text-[11px] font-semibold transition-colors',
                   selectedAmenities.includes(a)
-                    ? 'bg-slate-900 text-white'
+                    ? 'bg-blue-600 text-white'
                     : 'bg-slate-100 text-slate-600',
                 ]"
               >
@@ -705,7 +705,7 @@ const activeFilterCount = computed(() => {
   if (searchStore.priceFilter !== "all") c++;
   if (searchStore.ratingFilter > 0) c++;
   if (searchStore.sortBy !== "rating") c++;
-   if (searchStore.genderFilter !== "all") c++;
+  if (searchStore.genderFilter !== "all") c++;
   c += selectedAmenities.value.length;
   return c;
 });
