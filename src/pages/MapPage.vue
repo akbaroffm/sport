@@ -18,7 +18,7 @@
       </select>
     </div>
 
-    <div class="absolute bottom-8 right-4 z-[1000] flex gap-2">
+    <div class="absolute bottom-16 right-4 z-[1000] flex gap-2">
       <button
         @click="locateMe"
         class="p-2.5 bg-white/95 backdrop-blur-sm rounded-xl"

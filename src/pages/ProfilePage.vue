@@ -126,7 +126,7 @@
     </div>
 
     <!-- Logout -->
-    <div class="px-4 sm:px-6 lg:px-8 pt-5 max-w-3xl mx-auto">
+    <div class="px-4 sm:px-6 lg:px-8 pt-2 max-w-3xl mx-auto">
       <button
         @click="handleLogout"
         class="w-full py-2.5 bg-red-50 text-red-600 font-bold rounded-xl hover:bg-red-100 transition-colors text-sm flex items-center justify-center gap-2"
