@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen pb-24 lg:pb-8 bg-white">
     <!-- Profile header -->
-    <div class="bg-blue-600 px-4 sm:px-6 lg:px-8 pt-6 pb-12 rounded-b-[2rem]">
+    <div class="bg-blue-600 px-4 sm:px-6 lg:px-8 py-4 rounded-b-[2rem]">
       <div class="flex items-center gap-4 max-w-3xl mx-auto">
         <div
           class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center"
@@ -22,7 +22,7 @@
     </div>
 
     <!-- Stats cards (pulled up over header) -->
-    <div class="px-4 sm:px-6 lg:px-8 -mt-8 max-w-3xl mx-auto">
+    <!-- <div class="px-4 sm:px-6 lg:px-8 -mt-8 max-w-3xl mx-auto">
       <div class="grid grid-cols-3 gap-2.5">
         <div class="bg-white rounded-2xl p-3.5 text-center">
           <Heart :size="18" class="text-red-500 mx-auto mb-1.5" />
@@ -46,7 +46,7 @@
           <p class="text-[10px] font-semibold text-slate-400 mt-0.5">Kunlar</p>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- Menu items -->
     <div class="px-4 sm:px-6 lg:px-8 pt-5 max-w-3xl mx-auto">
