@@ -1,7 +1,7 @@
 <template>
   <div class="h-screen flex flex-col relative">
     <!-- Map Controls (top overlay) -->
-    <div class="absolute top-4 left-4 right-4 z-[1000] flex gap-2">
+    <div class="absolute top-4 left-4 right-16 z-[1000] flex gap-2">
       <!-- Back button -->
       <router-link to="/" class="p-2.5 bg-white/95 backdrop-blur-sm rounded-xl">
         <ArrowLeft :size="18" class="text-slate-700" />
@@ -16,7 +16,9 @@
           {{ c.label }}
         </option>
       </select>
+    </div>
 
+    <div class="absolute bottom-8 right-4 z-[1000] flex gap-2">
       <button
         @click="locateMe"
         class="p-2.5 bg-white/95 backdrop-blur-sm rounded-xl"
@@ -82,7 +84,6 @@
                 <span class="text-[11px] text-slate-400"
                   >({{ selectedFacility.reviewCount }})</span
                 >
-
               </div>
 
               <!-- Price + action -->
@@ -116,7 +117,6 @@ import {
   X,
   MapPin,
   Star,
-
   ChevronRight,
 } from "lucide-vue-next";
 
